@@ -23,6 +23,8 @@ subprojects {
                 "src/androidMain/kotlin",
                 "src/iosMain/kotlin",
                 "src/commonTest/kotlin",
+                "src/androidDeviceTest/kotlin",
+                "src/androidHostTest/kotlin",
             )
         )
     }

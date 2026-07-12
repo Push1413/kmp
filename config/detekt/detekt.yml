@@ -13,8 +13,6 @@ complexity:
 style:
   MagicNumber:
     active: false
-  ForbiddenComment:
-    active: false
 
 comments:
   UndocumentedPublicClass:

@@ -13,6 +13,13 @@
     <ID>CyclomaticComplexMethod:GameViewModel.kt$GameViewModel$private fun applySearchAndFilters()</ID>
     <ID>CyclomaticComplexMethod:StatisticsScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun StatisticsScreen( onNavigateBack: () -&gt; Unit, onGameClick: (Int) -&gt; Unit, modifier: Modifier = Modifier )</ID>
     <ID>CyclomaticComplexMethod:UpdateCollectionUseCase.kt$UpdateCollectionUseCaseImpl$override suspend fun validateUpdate( collectionId: String, newName: String?, newDescription: String? ): Result&lt;UpdateValidationInfo&gt;</ID>
+    <ID>ForbiddenComment:CollectionDetailScreen.kt$// TODO: Navigate to edit review screen</ID>
+    <ID>ForbiddenComment:CollectionsScreen.kt$// TODO: Implement sharing functionality</ID>
+    <ID>ForbiddenComment:CollectionsViewModel.kt$CollectionsViewModel$// TODO: Implement sharing functionality</ID>
+    <ID>ForbiddenComment:UserRatingReviewRepositoryImpl.kt$UserRatingReviewRepositoryImpl$// TODO: Implement database operations once SQLDelight classes are generated</ID>
+    <ID>ForbiddenComment:UserRatingReviewRepositoryImpl.kt$UserRatingReviewRepositoryImpl$// TODO: Implement once SQLDelight classes are generated</ID>
+    <ID>ForbiddenComment:UserRatingReviewRepositoryImpl.kt$UserRatingReviewRepositoryImpl$// TODO: Load actual user ratings and reviews from database once SQLDelight is implemented</ID>
+    <ID>ForbiddenComment:UserRatingReviewRepositoryImpl.kt$UserRatingReviewRepositoryImpl$// TODO: Load from database</ID>
     <ID>FunctionNaming:ActiveFiltersChips.kt$@OptIn(ExperimentalLayoutApi::class) @Composable fun ActiveFiltersChips( searchQuery: String, selectedPlatforms: Set&lt;Platform&gt;, selectedGenres: Set&lt;Genre&gt;, minRating: Double, onRemoveSearch: () -&gt; Unit, onRemovePlatform: (Platform) -&gt; Unit, onRemoveGenre: (Genre) -&gt; Unit, onRemoveRating: () -&gt; Unit, onClearAll: () -&gt; Unit, modifier: Modifier = Modifier )</ID>
     <ID>FunctionNaming:ActiveFiltersChips.kt$@Preview @Composable fun ActiveFiltersChipsEmptyPreview()</ID>
     <ID>FunctionNaming:ActiveFiltersChips.kt$@Preview @Composable fun ActiveFiltersChipsPreview()</ID>
