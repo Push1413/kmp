@@ -27,6 +27,7 @@ navigation-compose = "2.9.2"
 coil3 = "3.4.0"
 napier = "2.7.1"
 multiplatform-settings = "1.1.1"
+detekt = "1.23.8"
 
 
 [libraries]
@@ -83,3 +84,4 @@ kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref =
 kotlinx-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 sql-delight={id = "app.cash.sqldelight", version.ref = "sqldelight"}
+detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }

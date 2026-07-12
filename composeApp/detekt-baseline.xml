@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues/>
+  <CurrentIssues>
+    <ID>FunctionNaming:App.kt$@Composable @Preview fun App()</ID>
+    <ID>FunctionNaming:ConstrainedScrollableContainer.kt$@Composable fun ConstrainedScrollableContainer( modifier: Modifier = Modifier, fallbackHeight: androidx.compose.ui.unit.Dp = 400.dp, enableLogging: Boolean = true, content: @Composable () -&gt; Unit )</ID>
+    <ID>FunctionNaming:ConstrainedScrollableContainer.kt$@Composable fun FlexibleConstrainedScrollableContainer( modifier: Modifier = Modifier, fallbackHeight: androidx.compose.ui.unit.Dp = 400.dp, enableLogging: Boolean = true, content: @Composable () -&gt; Unit )</ID>
+    <ID>FunctionNaming:MainActivity.kt$@Preview @Composable fun AppAndroidPreview()</ID>
+    <ID>FunctionNaming:MainViewController.kt$fun MainViewController()</ID>
+    <ID>FunctionNaming:OnboardingScreen.kt$@Composable fun OnboardingPageContent(page: OnboardingPage)</ID>
+    <ID>FunctionNaming:OnboardingScreen.kt$@Composable fun OnboardingScreen( modifier: Modifier = Modifier, onFinishOnboarding: () -&gt; Unit )</ID>
+    <ID>FunctionNaming:SafePullToRefreshBox.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun ExtraSafePullToRefreshBox( isRefreshing: Boolean, onRefresh: () -&gt; Unit, modifier: Modifier = Modifier, state: PullToRefreshState = rememberPullToRefreshState(), fallbackHeight: androidx.compose.ui.unit.Dp = 400.dp, enableLogging: Boolean = true, content: @Composable () -&gt; Unit )</ID>
+    <ID>FunctionNaming:SafePullToRefreshBox.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun SafePullToRefreshBox( isRefreshing: Boolean, onRefresh: () -&gt; Unit, modifier: Modifier = Modifier, state: PullToRefreshState = rememberPullToRefreshState(), enableLogging: Boolean = true, content: @Composable () -&gt; Unit )</ID>
+    <ID>FunctionNaming:SplashScreen.kt$@Composable fun SplashScreen( modifier: Modifier = Modifier, onSplashComplete: () -&gt; Unit )</ID>
+    <ID>MatchingDeclarationName:OnboardingScreen.kt$OnboardingPage</ID>
+    <ID>MatchingDeclarationName:Platform.android.kt$AndroidPlatform : Platform</ID>
+    <ID>MatchingDeclarationName:Platform.ios.kt$IOSPlatform : Platform</ID>
+    <ID>MaxLineLength:ConstraintLogger.kt$ConstraintLogger$appendLine(" Max Height: ${if (childConstraints.maxHeight == Constraints.Infinity) "Infinity" else childConstraints.maxHeight}")</ID>
+    <ID>MaxLineLength:ConstraintLogger.kt$ConstraintLogger$appendLine(" Max Height: ${if (parentConstraints.maxHeight == Constraints.Infinity) "Infinity" else parentConstraints.maxHeight}")</ID>
+    <ID>MaxLineLength:ConstraintLogger.kt$ConstraintLogger$appendLine(" Max Width: ${if (childConstraints.maxWidth == Constraints.Infinity) "Infinity" else childConstraints.maxWidth}")</ID>
+    <ID>MaxLineLength:ConstraintLogger.kt$ConstraintLogger$appendLine(" Max Width: ${if (parentConstraints.maxWidth == Constraints.Infinity) "Infinity" else parentConstraints.maxWidth}")</ID>
+    <ID>MaxLineLength:ConstraintLogger.kt$ConstraintLogger$appendLine("Max Height: ${if (constraints.maxHeight == Constraints.Infinity) "Infinity" else constraints.maxHeight}")</ID>
+    <ID>MaxLineLength:ConstraintLogger.kt$ConstraintLogger$appendLine("Max Width: ${if (constraints.maxWidth == Constraints.Infinity) "Infinity" else constraints.maxWidth}")</ID>
+    <ID>MaxLineLength:ConstraintLogger.kt$ConstraintLogger$if</ID>
+    <ID>MaxLineLength:OnboardingScreen.kt$val color = if (pagerState.currentPage == iteration) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurface.copy(alpha = 0.2f)</ID>
+    <ID>NewLineAtEndOfFile:App.kt$com.devpush.kmp.App.kt</ID>
+    <ID>NewLineAtEndOfFile:AppDiSetup.kt$com.devpush.kmp.di.AppDiSetup.kt</ID>
+    <ID>NewLineAtEndOfFile:AppInitialization.kt$com.devpush.kmp.AppInitialization.kt</ID>
+    <ID>NewLineAtEndOfFile:AppInitializationService.kt$com.devpush.kmp.service.AppInitializationService.kt</ID>
+    <ID>NewLineAtEndOfFile:AppModule.kt$com.devpush.kmp.di.AppModule.kt</ID>
+    <ID>NewLineAtEndOfFile:BaseNavGraph.kt$com.devpush.kmp.navigation.BaseNavGraph.kt</ID>
+    <ID>NewLineAtEndOfFile:BuildConfigHelper.android.kt$com.devpush.kmp.ui.utils.BuildConfigHelper.android.kt</ID>
+    <ID>NewLineAtEndOfFile:BuildConfigHelper.ios.kt$com.devpush.kmp.ui.utils.BuildConfigHelper.ios.kt</ID>
+    <ID>NewLineAtEndOfFile:BuildConfigHelper.kt$com.devpush.kmp.ui.utils.BuildConfigHelper.kt</ID>
+    <ID>NewLineAtEndOfFile:ComposeAppCommonTest.kt$com.devpush.kmp.ComposeAppCommonTest.kt</ID>
+    <ID>NewLineAtEndOfFile:ConstrainedScrollableContainer.kt$com.devpush.kmp.ui.components.ConstrainedScrollableContainer.kt</ID>
+    <ID>NewLineAtEndOfFile:ConstraintLogger.kt$com.devpush.kmp.ui.utils.ConstraintLogger.kt</ID>
+    <ID>NewLineAtEndOfFile:ConstraintValidationModels.kt$com.devpush.kmp.ui.components.ConstraintValidationModels.kt</ID>
+    <ID>NewLineAtEndOfFile:GameNavGraph.kt$com.devpush.kmp.navigation.GameNavGraph.kt</ID>
+    <ID>NewLineAtEndOfFile:MainActivity.kt$com.devpush.kmp.MainActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:MainViewController.kt$com.devpush.kmp.MainViewController.kt</ID>
+    <ID>NewLineAtEndOfFile:MyApplication.kt$com.devpush.kmp.MyApplication.kt</ID>
+    <ID>NewLineAtEndOfFile:NapierSetup.kt$com.devpush.kmp.NapierSetup.kt</ID>
+    <ID>NewLineAtEndOfFile:Platform.android.kt$com.devpush.kmp.Platform.android.kt</ID>
+    <ID>NewLineAtEndOfFile:Platform.ios.kt$com.devpush.kmp.Platform.ios.kt</ID>
+    <ID>NewLineAtEndOfFile:Platform.kt$com.devpush.kmp.Platform.kt</ID>
+    <ID>NewLineAtEndOfFile:SafePullToRefreshBox.kt$com.devpush.kmp.ui.components.SafePullToRefreshBox.kt</ID>
+    <ID>SwallowedException:BuildConfigHelper.ios.kt$BuildConfigHelper$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:AppInitialization.kt$AppInitialization$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:AppInitializationService.kt$AppInitializationServiceImpl$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:BuildConfigHelper.ios.kt$BuildConfigHelper$e: Exception</ID>
+    <ID>UnusedPrivateProperty:BuildConfigHelper.ios.kt$BuildConfigHelper$val buildConfiguration = bundle.objectForInfoDictionaryKey("CFBundleVersion") as? String</ID>
+    <ID>UnusedPrivateProperty:OnboardingScreen.kt$val coroutineScope = rememberCoroutineScope()</ID>
+    <ID>WildcardImport:App.kt$import androidx.compose.runtime.*</ID>
+  </CurrentIssues>
+</SmellBaseline>
