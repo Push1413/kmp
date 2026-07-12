@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues/>
+  <CurrentIssues>
+    <ID>NewLineAtEndOfFile:CoreDatabaseModule.android.kt$com.devpush.coreDatabase.di.CoreDatabaseModule.android.kt</ID>
+    <ID>NewLineAtEndOfFile:CoreDatabaseModule.kt$com.devpush.coreDatabase.di.CoreDatabaseModule.kt</ID>
+    <ID>NewLineAtEndOfFile:DatabaseMigrationVerifier.kt$com.devpush.coreDatabase.DatabaseMigrationVerifier.kt</ID>
+    <ID>NewLineAtEndOfFile:Platform.android.kt$com.devpush.coreDatabase.Platform.android.kt</ID>
+    <ID>NewLineAtEndOfFile:Platform.ios.kt$com.devpush.coreDatabase.Platform.ios.kt</ID>
+    <ID>NewLineAtEndOfFile:Platform.kt$com.devpush.coreDatabase.Platform.kt</ID>
+    <ID>NewLineAtEndOfFile:SqlDriverFactory.ios.kt$com.devpush.coreDatabase.SqlDriverFactory.ios.kt</ID>
+    <ID>NewLineAtEndOfFile:SqlDriverFactory.kt$com.devpush.coreDatabase.SqlDriverFactory.kt</ID>
+    <ID>SwallowedException:DatabaseMigrationVerifier.kt$DatabaseMigrationVerifier$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:DatabaseMigrationVerifier.kt$DatabaseMigrationVerifier$e: Exception</ID>
+  </CurrentIssues>
+</SmellBaseline>

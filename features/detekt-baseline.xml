@@ -1,0 +1,535 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues/>
+  <CurrentIssues>
+    <ID>CyclomaticComplexMethod:AddGameToCollectionUseCase.kt$AddGameToCollectionUseCaseImpl$private suspend fun handleStatusTransition( gameId: Int, targetCollection: GameCollection, currentCollections: List&lt;GameCollection&gt; ): Result&lt;Unit&gt;</ID>
+    <ID>CyclomaticComplexMethod:CollectionDetailScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun CollectionDetailScreen( collectionId: String, modifier: Modifier = Modifier, onNavigateBack: () -&gt; Unit = {}, onGameClick: (Int) -&gt; Unit = {} )</ID>
+    <ID>CyclomaticComplexMethod:DeleteCollectionConfirmationDialog.kt$@Composable fun DeleteCollectionConfirmationDialog( collection: GameCollection, onConfirm: () -&gt; Unit, onDismiss: () -&gt; Unit, isDeleting: Boolean = false, error: String? = null )</ID>
+    <ID>CyclomaticComplexMethod:EditCollectionDialog.kt$@Composable fun EditCollectionDialog( collection: GameCollection, onDismiss: () -&gt; Unit, onUpdateCollection: (name: String, description: String?) -&gt; Unit, isLoading: Boolean = false, error: String? = null )</ID>
+    <ID>CyclomaticComplexMethod:FilterCollectionGamesUseCase.kt$FilterCollectionGamesUseCase$private fun compareGames( a: GameWithUserData, b: GameWithUserData, sortOption: CollectionSortOption ): Int</ID>
+    <ID>CyclomaticComplexMethod:FilterCollectionGamesUseCase.kt$FilterCollectionGamesUseCase$private fun matchesFilters( gameWithUserData: GameWithUserData, filterState: CollectionFilterState ): Boolean</ID>
+    <ID>CyclomaticComplexMethod:GameCollectionRepositoryImpl.kt$GameCollectionRepositoryImpl$override suspend fun createCollection( name: String, type: CollectionType, description: String? ): Result&lt;GameCollection&gt;</ID>
+    <ID>CyclomaticComplexMethod:GameScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun GameScreen( modifier: Modifier = Modifier, onClick: (Int) -&gt; Unit, onNavigateToCollections: () -&gt; Unit = {}, onNavigateToStatistics: () -&gt; Unit = {} )</ID>
+    <ID>CyclomaticComplexMethod:GameViewModel.kt$GameViewModel$private fun applySearchAndFilters()</ID>
+    <ID>CyclomaticComplexMethod:StatisticsScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun StatisticsScreen( onNavigateBack: () -&gt; Unit, onGameClick: (Int) -&gt; Unit, modifier: Modifier = Modifier )</ID>
+    <ID>CyclomaticComplexMethod:UpdateCollectionUseCase.kt$UpdateCollectionUseCaseImpl$override suspend fun validateUpdate( collectionId: String, newName: String?, newDescription: String? ): Result&lt;UpdateValidationInfo&gt;</ID>
+    <ID>FunctionNaming:ActiveFiltersChips.kt$@OptIn(ExperimentalLayoutApi::class) @Composable fun ActiveFiltersChips( searchQuery: String, selectedPlatforms: Set&lt;Platform&gt;, selectedGenres: Set&lt;Genre&gt;, minRating: Double, onRemoveSearch: () -&gt; Unit, onRemovePlatform: (Platform) -&gt; Unit, onRemoveGenre: (Genre) -&gt; Unit, onRemoveRating: () -&gt; Unit, onClearAll: () -&gt; Unit, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:ActiveFiltersChips.kt$@Preview @Composable fun ActiveFiltersChipsEmptyPreview()</ID>
+    <ID>FunctionNaming:ActiveFiltersChips.kt$@Preview @Composable fun ActiveFiltersChipsPreview()</ID>
+    <ID>FunctionNaming:ActiveFiltersChips.kt$@Preview @Composable fun ActiveFiltersChipsSearchOnlyPreview()</ID>
+    <ID>FunctionNaming:AddGamesToCollectionDialog.kt$@Composable fun AddGamesToCollectionDialog( availableGames: List&lt;Game&gt;, onDismiss: () -&gt; Unit, onAddGames: (List&lt;Int&gt;) -&gt; Unit, modifier: Modifier = Modifier, isLoading: Boolean = false )</ID>
+    <ID>FunctionNaming:AddGamesToCollectionDialog.kt$@Composable private fun GameSelectionItem( game: Game, isSelected: Boolean, onSelectionChange: (Boolean) -&gt; Unit, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:AddGamesToCollectionDialog.kt$@Preview @Composable fun AddGamesToCollectionDialogEmptyPreview()</ID>
+    <ID>FunctionNaming:AddGamesToCollectionDialog.kt$@Preview @Composable fun AddGamesToCollectionDialogLoadingPreview()</ID>
+    <ID>FunctionNaming:AddGamesToCollectionDialog.kt$@Preview @Composable fun AddGamesToCollectionDialogPreview()</ID>
+    <ID>FunctionNaming:AddToCollectionDialog.kt$@Composable fun AddToCollectionDialog( game: Game, collections: List&lt;GameCollection&gt;, onDismiss: () -&gt; Unit, onAddToCollection: (GameCollection) -&gt; Unit, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:AddToCollectionDialog.kt$@Composable private fun CollectionSelectionItem( collection: GameCollection, gameAlreadyInCollection: Boolean, onClick: (GameCollection) -&gt; Unit, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:AddToCollectionDialog.kt$@Composable private fun StatusTransitionConfirmationDialog( transition: CollectionTransition, onConfirm: () -&gt; Unit, onDismiss: () -&gt; Unit )</ID>
+    <ID>FunctionNaming:AddToCollectionDialog.kt$@Preview @Composable fun AddToCollectionDialogPreview()</ID>
+    <ID>FunctionNaming:CollectionCard.kt$@OptIn(ExperimentalFoundationApi::class) @Composable fun CollectionCard( collection: CollectionWithCount, onClick: () -&gt; Unit, onEdit: () -&gt; Unit, onDelete: () -&gt; Unit, onViewDetails: (() -&gt; Unit)? = null, onShare: (() -&gt; Unit)? = null, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:CollectionCard.kt$@Preview @Composable fun CollectionCardCustomPreview()</ID>
+    <ID>FunctionNaming:CollectionCard.kt$@Preview @Composable fun CollectionCardEmptyPreview()</ID>
+    <ID>FunctionNaming:CollectionCard.kt$@Preview @Composable fun CollectionCardPreview()</ID>
+    <ID>FunctionNaming:CollectionDetailScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun CollectionDetailScreen( collectionId: String, modifier: Modifier = Modifier, onNavigateBack: () -&gt; Unit = {}, onGameClick: (Int) -&gt; Unit = {} )</ID>
+    <ID>FunctionNaming:CollectionDetailScreen.kt$@Preview @Composable fun CollectionDetailScreenPreview()</ID>
+    <ID>FunctionNaming:CollectionFilterPanel.kt$@OptIn(ExperimentalLayoutApi::class) @Composable fun CollectionFilterPanel( filterState: CollectionFilterState, onFilterStateChanged: (CollectionFilterState) -&gt; Unit, onClearFilters: () -&gt; Unit, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:CollectionFilterPanel.kt$@Preview @Composable fun CollectionFilterPanelPreview()</ID>
+    <ID>FunctionNaming:CollectionGameCard.kt$@Composable fun CollectionGameCard( game: Game, onClick: () -&gt; Unit, onRemove: () -&gt; Unit, modifier: Modifier = Modifier, showRemoveButton: Boolean = true )</ID>
+    <ID>FunctionNaming:CollectionGameCard.kt$@Composable fun CollectionGameCard( game: Game, onGameClick: () -&gt; Unit, onRemoveFromCollection: () -&gt; Unit, modifier: Modifier = Modifier, showRemoveButton: Boolean = true )</ID>
+    <ID>FunctionNaming:CollectionGameCard.kt$@Composable fun CollectionGameCard( gameWithUserData: GameWithUserData, onClick: () -&gt; Unit, onRemove: () -&gt; Unit, modifier: Modifier = Modifier, showRemoveButton: Boolean = true, onQuickRating: ((Int) -&gt; Unit)? = null, onReviewPreview: (() -&gt; Unit)? = null )</ID>
+    <ID>FunctionNaming:CollectionGameCard.kt$@Composable private fun RemoveGameConfirmationDialog( gameName: String, onConfirm: () -&gt; Unit, onDismiss: () -&gt; Unit )</ID>
+    <ID>FunctionNaming:CollectionGameCard.kt$@Preview @Composable fun CollectionGameCardNoRemovePreview()</ID>
+    <ID>FunctionNaming:CollectionGameCard.kt$@Preview @Composable fun CollectionGameCardNoUserDataPreview()</ID>
+    <ID>FunctionNaming:CollectionGameCard.kt$@Preview @Composable fun CollectionGameCardPreview()</ID>
+    <ID>FunctionNaming:CollectionGameCard.kt$@Preview @Composable fun CollectionGameCardUserRatingOnlyPreview()</ID>
+    <ID>FunctionNaming:CollectionGrid.kt$@Composable fun CollectionGrid( collections: List&lt;CollectionWithCount&gt;, onCollectionClick: (String) -&gt; Unit, onEditCollection: (CollectionWithCount) -&gt; Unit, onDeleteCollection: (CollectionWithCount) -&gt; Unit, onViewCollectionDetails: ((CollectionWithCount) -&gt; Unit)? = null, onShareCollection: ((CollectionWithCount) -&gt; Unit)? = null, isLoading: Boolean = false, error: CollectionError? = null, modifier: Modifier = Modifier, contentPadding: PaddingValues = PaddingValues(16.dp) )</ID>
+    <ID>FunctionNaming:CollectionGrid.kt$@Composable fun EmptyCollectionsState( modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:CollectionGrid.kt$@Composable private fun ErrorState( error: CollectionError, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:CollectionGrid.kt$@Composable private fun LoadingState( modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:CollectionGrid.kt$@Preview @Composable fun CollectionGridEmptyPreview()</ID>
+    <ID>FunctionNaming:CollectionGrid.kt$@Preview @Composable fun CollectionGridErrorPreview()</ID>
+    <ID>FunctionNaming:CollectionGrid.kt$@Preview @Composable fun CollectionGridLoadingPreview()</ID>
+    <ID>FunctionNaming:CollectionGrid.kt$@Preview @Composable fun CollectionGridPreview()</ID>
+    <ID>FunctionNaming:CollectionsScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun CollectionsScreen( modifier: Modifier = Modifier, onCollectionClick: (String) -&gt; Unit = {}, onNavigateBack: () -&gt; Unit = {} )</ID>
+    <ID>FunctionNaming:CollectionsScreen.kt$@Preview @Composable fun CollectionsScreenPreview()</ID>
+    <ID>FunctionNaming:ConstrainedScrollableContainer.kt$@Composable fun ConstrainedScrollableContainer( modifier: Modifier = Modifier, fallbackHeight: androidx.compose.ui.unit.Dp = 400.dp, enableLogging: Boolean = true, content: @Composable () -&gt; Unit )</ID>
+    <ID>FunctionNaming:ConstrainedScrollableContainer.kt$@Composable fun FlexibleConstrainedScrollableContainer( modifier: Modifier = Modifier, fallbackHeight: androidx.compose.ui.unit.Dp = 400.dp, enableLogging: Boolean = true, content: @Composable () -&gt; Unit )</ID>
+    <ID>FunctionNaming:CreateCollectionDialog.kt$@Composable fun CreateCollectionDialog( onDismiss: () -&gt; Unit, onCreateCollection: (name: String, type: CollectionType) -&gt; Unit, modifier: Modifier = Modifier, existingCollectionNames: List&lt;String&gt; = emptyList() )</ID>
+    <ID>FunctionNaming:CreateCollectionDialog.kt$@Composable private fun CollectionTypeOption( type: CollectionType, isSelected: Boolean, onClick: () -&gt; Unit, modifier: Modifier = Modifier, customName: String? = null )</ID>
+    <ID>FunctionNaming:CreateCollectionDialog.kt$@Preview @Composable fun CreateCollectionDialogPreview()</ID>
+    <ID>FunctionNaming:CreateCollectionDialog.kt$@Preview @Composable fun CreateCollectionDialogWithDefaultTypePreview()</ID>
+    <ID>FunctionNaming:DeleteCollectionConfirmationDialog.kt$@Composable fun DeleteCollectionConfirmationDialog( collection: GameCollection, onConfirm: () -&gt; Unit, onDismiss: () -&gt; Unit, isDeleting: Boolean = false, error: String? = null )</ID>
+    <ID>FunctionNaming:DeleteCollectionConfirmationDialog.kt$@Preview @Composable fun DeleteCollectionConfirmationDialogCustomPreview()</ID>
+    <ID>FunctionNaming:DeleteCollectionConfirmationDialog.kt$@Preview @Composable fun DeleteCollectionConfirmationDialogDefaultPreview()</ID>
+    <ID>FunctionNaming:DeleteCollectionConfirmationDialog.kt$@Preview @Composable fun DeleteCollectionConfirmationDialogEmptyPreview()</ID>
+    <ID>FunctionNaming:DeleteCollectionConfirmationDialog.kt$@Preview @Composable fun DeleteCollectionConfirmationDialogErrorPreview()</ID>
+    <ID>FunctionNaming:EditCollectionDialog.kt$@Composable fun EditCollectionDialog( collection: GameCollection, onDismiss: () -&gt; Unit, onUpdateCollection: (name: String, description: String?) -&gt; Unit, isLoading: Boolean = false, error: String? = null )</ID>
+    <ID>FunctionNaming:EditCollectionDialog.kt$@Preview @Composable fun EditCollectionDialogDefaultPreview()</ID>
+    <ID>FunctionNaming:EditCollectionDialog.kt$@Preview @Composable fun EditCollectionDialogErrorPreview()</ID>
+    <ID>FunctionNaming:EditCollectionDialog.kt$@Preview @Composable fun EditCollectionDialogPreview()</ID>
+    <ID>FunctionNaming:EmptySearchResults.kt$@Composable fun EmptySearchResults( searchQuery: String, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:EmptySearchResults.kt$@Preview @Composable fun EmptySearchResultsNoQueryPreview()</ID>
+    <ID>FunctionNaming:EmptySearchResults.kt$@Preview @Composable fun EmptySearchResultsPreview()</ID>
+    <ID>FunctionNaming:EmptyStates.kt$@Composable fun EmptyCollectionState( collectionName: String, onAddGames: () -&gt; Unit, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:EmptyStates.kt$@Composable fun EmptyCollectionsState( onCreateCollection: () -&gt; Unit, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:EmptyStates.kt$@Composable fun EmptySearchResultsState( searchQuery: String, onClearSearch: () -&gt; Unit, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:EmptyStates.kt$@Composable fun LoadingGamesState( message: String = "Loading games...", modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:EmptyStates.kt$@Preview @Composable fun EmptyCollectionStatePreview()</ID>
+    <ID>FunctionNaming:EmptyStates.kt$@Preview @Composable fun EmptyCollectionsStatePreview()</ID>
+    <ID>FunctionNaming:EmptyStates.kt$@Preview @Composable fun EmptySearchResultsStatePreview()</ID>
+    <ID>FunctionNaming:EmptyStates.kt$@Preview @Composable fun LoadingGamesStatePreview()</ID>
+    <ID>FunctionNaming:ExpandableFilterLayout.kt$@Composable fun ExpandableFilterLayout( searchFilterState: SearchFilterState, availablePlatforms: List&lt;Platform&gt;, availableGenres: List&lt;Genre&gt;, onPlatformToggle: (Platform) -&gt; Unit, onGenreToggle: (Genre) -&gt; Unit, onRatingChange: (Double) -&gt; Unit, onClearFilters: () -&gt; Unit, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:ExpandableFilterLayout.kt$@Composable fun ResponsiveFilterLayout( searchFilterState: SearchFilterState, availablePlatforms: List&lt;Platform&gt;, availableGenres: List&lt;Genre&gt;, onPlatformToggle: (Platform) -&gt; Unit, onGenreToggle: (Genre) -&gt; Unit, onRatingChange: (Double) -&gt; Unit, onClearFilters: () -&gt; Unit, isCompactLayout: Boolean = true, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:ExpandableFilterLayout.kt$@Preview @Composable fun ExpandableFilterLayoutPreview()</ID>
+    <ID>FunctionNaming:ExpandableFilterLayout.kt$@Preview @Composable fun ResponsiveFilterLayoutCompactPreview()</ID>
+    <ID>FunctionNaming:FilterPanel.kt$@OptIn(ExperimentalLayoutApi::class) @Composable fun FilterPanel( availablePlatforms: List&lt;Platform&gt;, availableGenres: List&lt;Genre&gt;, selectedPlatforms: Set&lt;Platform&gt;, selectedGenres: Set&lt;Genre&gt;, minRating: Double, onPlatformToggle: (Platform) -&gt; Unit, onGenreToggle: (Genre) -&gt; Unit, onRatingChange: (Double) -&gt; Unit, onClearFilters: () -&gt; Unit, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:FilterPanel.kt$@Preview @Composable fun FilterPanelEmptyPreview()</ID>
+    <ID>FunctionNaming:FilterPanel.kt$@Preview @Composable fun FilterPanelPreview()</ID>
+    <ID>FunctionNaming:FilterToggleButton.kt$@Composable fun FilterToggleButton( isExpanded: Boolean, activeFilterCount: Int, onClick: () -&gt; Unit, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:FilterToggleButton.kt$@Preview @Composable fun FilterToggleButtonCollapsedPreview()</ID>
+    <ID>FunctionNaming:FilterToggleButton.kt$@Preview @Composable fun FilterToggleButtonExpandedPreview()</ID>
+    <ID>FunctionNaming:FilterToggleButton.kt$@Preview @Composable fun FilterToggleButtonWithFiltersPreview()</ID>
+    <ID>FunctionNaming:GameCard.kt$@Composable fun GameCard( gameItem: Game, onClick: () -&gt; Unit, modifier: Modifier = Modifier, searchQuery: String = "", onAddToCollection: ((Game) -&gt; Unit)? = null, collectionsContainingGame: List&lt;CollectionType&gt; = emptyList() )</ID>
+    <ID>FunctionNaming:GameCard.kt$@Preview @Composable fun GameCardPreview()</ID>
+    <ID>FunctionNaming:GameCard.kt$@Preview @Composable fun GameCardWithCollectionsPreview()</ID>
+    <ID>FunctionNaming:GameCard.kt$@Preview @Composable fun GameCardWithHighlightPreview()</ID>
+    <ID>FunctionNaming:GameDetailsScreen.kt$@Composable fun GameDetailsScreen(modifier: Modifier = Modifier, id: String, onBackClick: () -&gt; Unit)</ID>
+    <ID>FunctionNaming:GameDetailsScreen.kt$@Composable private fun UserRatingSection( userRating: UserRating?, isLoading: Boolean, onRatingChanged: (Int) -&gt; Unit, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:GameDetailsScreen.kt$@Composable private fun UserReviewSection( userReview: UserReview?, isLoading: Boolean, onShowReviewDialog: () -&gt; Unit, onDeleteReview: () -&gt; Unit, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:GameDetailsScreen.kt$@OptIn(ExperimentalLayoutApi::class) @Composable fun GameDetailsScreenContent( modifier: Modifier = Modifier, uiState: GameDetailsUiState, onDelete: (Int) -&gt; Unit, onSave: (id: Int, title: String, image: String) -&gt; Unit, onBackClick: () -&gt; Unit, onShowAddToCollectionDialog: () -&gt; Unit = {}, onQuickAddToCollection: (CollectionType) -&gt; Unit = {}, onAddToCollection: (com.devpush.features.game.domain.model.collections.GameCollection) -&gt; Unit = {}, onHideAddToCollectionDialog: () -&gt; Unit = {}, onRatingChanged: (Int) -&gt; Unit = {}, onShowReviewDialog: () -&gt; Unit = {}, onHideReviewDialog: () -&gt; Unit = {}, onSaveReview: (String) -&gt; Unit = {}, onDeleteReview: () -&gt; Unit = {} )</ID>
+    <ID>FunctionNaming:GameDetailsScreen.kt$@Preview @Composable fun GameDetailsScreenContentPreview()</ID>
+    <ID>FunctionNaming:GameList.kt$@Composable fun GameList( games: List&lt;Game&gt;, onGameClick: (Int) -&gt; Unit, modifier: Modifier = Modifier, searchQuery: String = "", contentPadding: PaddingValues = PaddingValues(0.dp) )</ID>
+    <ID>FunctionNaming:GameList.kt$@Preview @Composable fun GameListPreview()</ID>
+    <ID>FunctionNaming:GameScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun GameScreen( modifier: Modifier = Modifier, onClick: (Int) -&gt; Unit, onNavigateToCollections: () -&gt; Unit = {}, onNavigateToStatistics: () -&gt; Unit = {} )</ID>
+    <ID>FunctionNaming:GameScreen.kt$@Preview @Composable fun GameScreenPreview()</ID>
+    <ID>FunctionNaming:GameSearchBar.kt$@Composable fun GameSearchBar( query: String, onQueryChange: (String) -&gt; Unit, onClearQuery: () -&gt; Unit, modifier: Modifier = Modifier, placeholder: String = "Search games...", debounceTimeMs: Long = 300L )</ID>
+    <ID>FunctionNaming:GameSearchBar.kt$@Preview @Composable fun GameSearchBarPreview()</ID>
+    <ID>FunctionNaming:GameSearchBar.kt$@Preview @Composable fun GameSearchBarWithTextPreview()</ID>
+    <ID>FunctionNaming:QuickRating.kt$@Composable fun QuickRating( currentRating: Int, onRatingChanged: (Int) -&gt; Unit, modifier: Modifier = Modifier, showRatingDialog: Boolean = false, onShowRatingDialog: () -&gt; Unit = {}, onHideRatingDialog: () -&gt; Unit = {} )</ID>
+    <ID>FunctionNaming:QuickRating.kt$@Composable private fun QuickRatingDialog( currentRating: Int, onRatingSelected: (Int) -&gt; Unit, onDismiss: () -&gt; Unit )</ID>
+    <ID>FunctionNaming:RatingDistributionChart.kt$@Composable fun RatingDistributionChart( stats: UserRatingStats, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:RecentActivityList.kt$@Composable fun RecentActivityList( activities: List&lt;RecentActivity&gt;, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:RecentActivityList.kt$@Composable private fun RecentActivityItem( activity: RecentActivity, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:ReviewCard.kt$@Composable fun CompactReviewCard( review: UserReview, onEditClick: () -&gt; Unit, onDeleteClick: () -&gt; Unit, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:ReviewCard.kt$@Composable fun ReviewCard( review: UserReview, onEditClick: () -&gt; Unit, onDeleteClick: () -&gt; Unit, modifier: Modifier = Modifier, maxLines: Int? = null )</ID>
+    <ID>FunctionNaming:ReviewDialog.kt$@Composable fun ReviewDialog( isVisible: Boolean, initialReviewText: String = "", onDismiss: () -&gt; Unit, onSave: (String) -&gt; Unit, modifier: Modifier = Modifier, maxCharacters: Int = 1000, isEditing: Boolean = false )</ID>
+    <ID>FunctionNaming:ReviewPreviewDialog.kt$@Composable fun ReviewPreviewDialog( gameWithUserData: GameWithUserData, onDismiss: () -&gt; Unit, onEditReview: (() -&gt; Unit)? = null )</ID>
+    <ID>FunctionNaming:ReviewPreviewDialog.kt$@Preview @Composable fun ReviewPreviewDialogPreview()</ID>
+    <ID>FunctionNaming:SafePullToRefreshBox.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun SafePullToRefreshBox( isRefreshing: Boolean, onRefresh: () -&gt; Unit, modifier: Modifier = Modifier, state: PullToRefreshState = rememberPullToRefreshState(), fallbackHeight: androidx.compose.ui.unit.Dp = 400.dp, content: @Composable () -&gt; Unit )</ID>
+    <ID>FunctionNaming:SafePullToRefreshBox.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun SafePullToRefreshBoxWithValidation( isRefreshing: Boolean, onRefresh: () -&gt; Unit, modifier: Modifier = Modifier, state: PullToRefreshState = rememberPullToRefreshState(), fallbackHeight: androidx.compose.ui.unit.Dp = 400.dp, enableDebugLogging: Boolean = true, content: @Composable () -&gt; Unit )</ID>
+    <ID>FunctionNaming:SafePullToRefreshBoxDemo.kt$@Composable fun SafePullToRefreshBoxDemo_CollectionDetailScenario( collectionName: String = "My Collection", games: List&lt;String&gt; = listOf("Game 1", "Game 2", "Game 3", "Game 4", "Game 5"), isRefreshing: Boolean = false, onRefresh: () -&gt; Unit = {} )</ID>
+    <ID>FunctionNaming:SafePullToRefreshBoxDemo.kt$@Composable fun SafePullToRefreshBoxDemo_ConstraintValidation()</ID>
+    <ID>FunctionNaming:SafePullToRefreshBoxDemo.kt$@Composable fun SafePullToRefreshBoxDemo_Migration( items: List&lt;String&gt; = listOf("Item 1", "Item 2", "Item 3"), isRefreshing: Boolean = false, onRefresh: () -&gt; Unit = {} )</ID>
+    <ID>FunctionNaming:SafePullToRefreshBoxDemo.kt$@Composable fun SafePullToRefreshBoxDemo_UnsafeComparison( collectionName: String = "My Collection", games: List&lt;String&gt; = listOf("Game 1", "Game 2", "Game 3"), isRefreshing: Boolean = false, onRefresh: () -&gt; Unit = {} )</ID>
+    <ID>FunctionNaming:SafePullToRefreshBoxExamples.kt$@Composable fun SafePullToRefreshBoxExample_ComplexLayout( headerTitle: String, items: List&lt;String&gt;, isRefreshing: Boolean, onRefresh: () -&gt; Unit )</ID>
+    <ID>FunctionNaming:SafePullToRefreshBoxExamples.kt$@Composable fun SafePullToRefreshBoxExample_LazyColumn( items: List&lt;String&gt;, isRefreshing: Boolean, onRefresh: () -&gt; Unit )</ID>
+    <ID>FunctionNaming:SafePullToRefreshBoxExamples.kt$@Composable fun SafePullToRefreshBoxExample_LazyVerticalGrid( items: List&lt;String&gt;, isRefreshing: Boolean, onRefresh: () -&gt; Unit )</ID>
+    <ID>FunctionNaming:SafePullToRefreshBoxExamples.kt$@Composable fun SafePullToRefreshBoxExample_Migration( items: List&lt;String&gt;, isRefreshing: Boolean, onRefresh: () -&gt; Unit, useSafeVersion: Boolean = true )</ID>
+    <ID>FunctionNaming:SafePullToRefreshBoxExamples.kt$@Composable fun SafePullToRefreshBoxExample_StateHandling( items: List&lt;String&gt;, isLoading: Boolean, isRefreshing: Boolean, error: String?, onRefresh: () -&gt; Unit, onRetry: () -&gt; Unit )</ID>
+    <ID>FunctionNaming:SafePullToRefreshBoxExamples.kt$@Composable fun SafePullToRefreshBoxExample_WithValidation( items: List&lt;String&gt;, isRefreshing: Boolean, onRefresh: () -&gt; Unit, enableDebugLogging: Boolean = false )</ID>
+    <ID>FunctionNaming:StarRating.kt$@Composable fun CompactStarRating( rating: Int, modifier: Modifier = Modifier, maxRating: Int = 5, starSize: Dp = 16.dp, starColor: Color = MaterialTheme.colorScheme.primary, emptyStarColor: Color = MaterialTheme.colorScheme.outline )</ID>
+    <ID>FunctionNaming:StarRating.kt$@Composable fun StarRating( rating: Int, onRatingChanged: ((Int) -&gt; Unit)? = null, modifier: Modifier = Modifier, maxRating: Int = 5, starSize: Dp = 24.dp, starColor: Color = MaterialTheme.colorScheme.primary, emptyStarColor: Color = MaterialTheme.colorScheme.outline, contentDescription: String? = null )</ID>
+    <ID>FunctionNaming:StatisticsCard.kt$@Composable fun StatisticsCard( title: String, value: String, icon: ImageVector, subtitle: String? = null, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:StatisticsScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun StatisticsScreen( onNavigateBack: () -&gt; Unit, onGameClick: (Int) -&gt; Unit, modifier: Modifier = Modifier )</ID>
+    <ID>InstanceOfCheckForException:AddGameToCollectionUseCase.kt$AddGameToCollectionUseCaseImpl$e is CollectionError</ID>
+    <ID>InstanceOfCheckForException:CreateCollectionUseCase.kt$CreateCollectionUseCaseImpl$e is CollectionError</ID>
+    <ID>InstanceOfCheckForException:DeleteCollectionUseCase.kt$DeleteCollectionUseCaseImpl$e is CollectionError</ID>
+    <ID>InstanceOfCheckForException:GetCollectionsUseCase.kt$GetCollectionsUseCaseImpl$e is CollectionError</ID>
+    <ID>InstanceOfCheckForException:ManageCollectionStatusUseCase.kt$ManageCollectionStatusUseCaseImpl$e is CollectionError</ID>
+    <ID>InstanceOfCheckForException:RemoveGameFromCollectionUseCase.kt$RemoveGameFromCollectionUseCaseImpl$e is CollectionError</ID>
+    <ID>InstanceOfCheckForException:UpdateCollectionUseCase.kt$UpdateCollectionUseCaseImpl$e is CollectionError</ID>
+    <ID>InvalidPackageDeclaration:ActiveFiltersChips.kt$package com.devpush.features.game.ui.components</ID>
+    <ID>InvalidPackageDeclaration:AddGameToCollectionUseCase.kt$package com.devpush.features.game.domain.usecase</ID>
+    <ID>InvalidPackageDeclaration:AddGamesToCollectionDialog.kt$package com.devpush.features.game.ui.collections.components</ID>
+    <ID>InvalidPackageDeclaration:AddToCollectionDialog.kt$package com.devpush.features.game.ui.components</ID>
+    <ID>InvalidPackageDeclaration:CollectionCard.kt$package com.devpush.features.game.ui.components</ID>
+    <ID>InvalidPackageDeclaration:CollectionDetailScreen.kt$package com.devpush.features.game.ui.collections</ID>
+    <ID>InvalidPackageDeclaration:CollectionDetailViewModel.kt$package com.devpush.features.game.ui.collections</ID>
+    <ID>InvalidPackageDeclaration:CollectionError.kt$package com.devpush.features.game.domain.model.collections</ID>
+    <ID>InvalidPackageDeclaration:CollectionFilterPanel.kt$package com.devpush.features.game.ui.collections.components</ID>
+    <ID>InvalidPackageDeclaration:CollectionFilterState.kt$package com.devpush.features.game.domain.model.collections</ID>
+    <ID>InvalidPackageDeclaration:CollectionGameCard.kt$package com.devpush.features.game.ui.collections.components</ID>
+    <ID>InvalidPackageDeclaration:CollectionGameCard.kt$package com.devpush.features.game.ui.components</ID>
+    <ID>InvalidPackageDeclaration:CollectionGrid.kt$package com.devpush.features.game.ui.collections.components</ID>
+    <ID>InvalidPackageDeclaration:CollectionInitializationService.kt$package com.devpush.features.game.domain.service</ID>
+    <ID>InvalidPackageDeclaration:CollectionMappers.kt$package com.devpush.features.game.data.mappers</ID>
+    <ID>InvalidPackageDeclaration:CollectionType.kt$package com.devpush.features.game.domain.model.collections</ID>
+    <ID>InvalidPackageDeclaration:CollectionsScreen.kt$package com.devpush.features.game.ui.collections</ID>
+    <ID>InvalidPackageDeclaration:CollectionsViewModel.kt$package com.devpush.features.game.ui.collections</ID>
+    <ID>InvalidPackageDeclaration:ConstrainedScrollableContainer.kt$package com.devpush.features.ui.components</ID>
+    <ID>InvalidPackageDeclaration:CreateCollectionDialog.kt$package com.devpush.features.game.ui.collections.components</ID>
+    <ID>InvalidPackageDeclaration:CreateCollectionUseCase.kt$package com.devpush.features.game.domain.usecase</ID>
+    <ID>InvalidPackageDeclaration:DeleteCollectionConfirmationDialog.kt$package com.devpush.features.game.ui.collections.components</ID>
+    <ID>InvalidPackageDeclaration:DeleteCollectionUseCase.kt$package com.devpush.features.game.domain.usecase</ID>
+    <ID>InvalidPackageDeclaration:DeleteUserRatingUseCase.kt$package com.devpush.features.userRatingsReviews.domain.usecase</ID>
+    <ID>InvalidPackageDeclaration:DeleteUserReviewUseCase.kt$package com.devpush.features.userRatingsReviews.domain.usecase</ID>
+    <ID>InvalidPackageDeclaration:EditCollectionDialog.kt$package com.devpush.features.game.ui.collections.components</ID>
+    <ID>InvalidPackageDeclaration:EmptySearchResults.kt$package com.devpush.features.game.ui.components</ID>
+    <ID>InvalidPackageDeclaration:EmptyStates.kt$package com.devpush.features.game.ui.collections.components</ID>
+    <ID>InvalidPackageDeclaration:ExpandableFilterLayout.kt$package com.devpush.features.game.ui.components</ID>
+    <ID>InvalidPackageDeclaration:FilterCollectionGamesUseCase.kt$package com.devpush.features.game.domain.usecase</ID>
+    <ID>InvalidPackageDeclaration:FilterGamesUseCase.kt$package com.devpush.features.game.domain.usecase</ID>
+    <ID>InvalidPackageDeclaration:FilterPanel.kt$package com.devpush.features.game.ui.components</ID>
+    <ID>InvalidPackageDeclaration:FilterToggleButton.kt$package com.devpush.features.game.ui.components</ID>
+    <ID>InvalidPackageDeclaration:FilterValidator.kt$package com.devpush.features.game.domain.validation</ID>
+    <ID>InvalidPackageDeclaration:Game.kt$package com.devpush.features.game.domain.model</ID>
+    <ID>InvalidPackageDeclaration:GameCard.kt$package com.devpush.features.game.ui.components</ID>
+    <ID>InvalidPackageDeclaration:GameCollection.kt$package com.devpush.features.game.domain.model.collections</ID>
+    <ID>InvalidPackageDeclaration:GameCollectionDomainModule.kt$package com.devpush.features.game.domain.di</ID>
+    <ID>InvalidPackageDeclaration:GameCollectionModule.kt$package com.devpush.features.game.data.di</ID>
+    <ID>InvalidPackageDeclaration:GameCollectionRepository.kt$package com.devpush.features.game.domain.repository</ID>
+    <ID>InvalidPackageDeclaration:GameCollectionRepositoryImpl.kt$package com.devpush.features.game.data.repository</ID>
+    <ID>InvalidPackageDeclaration:GameCollectionViewModelModule.kt$package com.devpush.features.game.ui.di</ID>
+    <ID>InvalidPackageDeclaration:GameDetails.kt$package com.devpush.features.gameDetails.domain.model</ID>
+    <ID>InvalidPackageDeclaration:GameDetailsMapper.kt$package com.devpush.features.gameDetails.data.mappers</ID>
+    <ID>InvalidPackageDeclaration:GameDetailsModule.kt$package com.devpush.features.gameDetails.data.di</ID>
+    <ID>InvalidPackageDeclaration:GameDetailsRepository.kt$package com.devpush.features.gameDetails.domain.repository</ID>
+    <ID>InvalidPackageDeclaration:GameDetailsRepositoryImpl.kt$package com.devpush.features.gameDetails.data.repository</ID>
+    <ID>InvalidPackageDeclaration:GameDetailsScreen.kt$package com.devpush.features.gameDetails.ui</ID>
+    <ID>InvalidPackageDeclaration:GameDetailsUiState.kt$package com.devpush.features.gameDetails.ui</ID>
+    <ID>InvalidPackageDeclaration:GameDetailsViewModel.kt$package com.devpush.features.gameDetails.ui</ID>
+    <ID>InvalidPackageDeclaration:GameDetailsViewModel.kt$package com.devpush.features.gameDetails.ui.di</ID>
+    <ID>InvalidPackageDeclaration:GameDomainModule.kt$package com.devpush.features.game.domain.di</ID>
+    <ID>InvalidPackageDeclaration:GameList.kt$package com.devpush.features.game.ui.components</ID>
+    <ID>InvalidPackageDeclaration:GameMapper.kt$package com.devpush.features.game.data.mappers</ID>
+    <ID>InvalidPackageDeclaration:GameModule.kt$package com.devpush.features.game.data.di</ID>
+    <ID>InvalidPackageDeclaration:GameRepository.kt$package com.devpush.features.game.domain.repository</ID>
+    <ID>InvalidPackageDeclaration:GameRepositoryImpl.kt$package com.devpush.features.game.data.repository</ID>
+    <ID>InvalidPackageDeclaration:GameScreen.kt$package com.devpush.features.game.ui</ID>
+    <ID>InvalidPackageDeclaration:GameSearchBar.kt$package com.devpush.features.game.ui.components</ID>
+    <ID>InvalidPackageDeclaration:GameUiState.kt$package com.devpush.features.game.ui</ID>
+    <ID>InvalidPackageDeclaration:GameViewModel.kt$package com.devpush.features.game.ui</ID>
+    <ID>InvalidPackageDeclaration:GameViewModelModule.kt$package com.devpush.features.game.ui.di</ID>
+    <ID>InvalidPackageDeclaration:GameWithUserData.kt$package com.devpush.features.userRatingsReviews.domain.model</ID>
+    <ID>InvalidPackageDeclaration:Genre.kt$package com.devpush.features.game.domain.model</ID>
+    <ID>InvalidPackageDeclaration:GenreMapper.kt$package com.devpush.features.game.data.mappers</ID>
+    <ID>InvalidPackageDeclaration:GetAvailableFiltersUseCase.kt$package com.devpush.features.game.domain.usecase</ID>
+    <ID>InvalidPackageDeclaration:GetCollectionsUseCase.kt$package com.devpush.features.game.domain.usecase</ID>
+    <ID>InvalidPackageDeclaration:GetGameWithUserDataUseCase.kt$package com.devpush.features.userRatingsReviews.domain.usecase</ID>
+    <ID>InvalidPackageDeclaration:GetGamesWithUserDataUseCase.kt$package com.devpush.features.userRatingsReviews.domain.usecase</ID>
+    <ID>InvalidPackageDeclaration:GetRecentUserActivityUseCase.kt$package com.devpush.features.userRatingsReviews.domain.usecase</ID>
+    <ID>InvalidPackageDeclaration:GetUserRatingStatsUseCase.kt$package com.devpush.features.userRatingsReviews.domain.usecase</ID>
+    <ID>InvalidPackageDeclaration:GetUserRatingUseCase.kt$package com.devpush.features.userRatingsReviews.domain.usecase</ID>
+    <ID>InvalidPackageDeclaration:GetUserReviewUseCase.kt$package com.devpush.features.userRatingsReviews.domain.usecase</ID>
+    <ID>InvalidPackageDeclaration:InitializeDefaultCollectionsUseCase.kt$package com.devpush.features.game.domain.usecase</ID>
+    <ID>InvalidPackageDeclaration:InputSanitizer.kt$package com.devpush.features.userRatingsReviews.domain.validation</ID>
+    <ID>InvalidPackageDeclaration:ManageCollectionStatusUseCase.kt$package com.devpush.features.game.domain.usecase</ID>
+    <ID>InvalidPackageDeclaration:OfflineManager.kt$package com.devpush.features.game.data.cache</ID>
+    <ID>InvalidPackageDeclaration:Platform.kt$package com.devpush.features.game.domain.model</ID>
+    <ID>InvalidPackageDeclaration:PlatformMapper.kt$package com.devpush.features.game.data.mappers</ID>
+    <ID>InvalidPackageDeclaration:QuickRating.kt$package com.devpush.features.userRatingsReviews.ui.components</ID>
+    <ID>InvalidPackageDeclaration:RatingDistributionChart.kt$package com.devpush.features.userRatingsReviews.ui.statistics.components</ID>
+    <ID>InvalidPackageDeclaration:RecentActivityList.kt$package com.devpush.features.userRatingsReviews.ui.statistics.components</ID>
+    <ID>InvalidPackageDeclaration:RemoveGameFromCollectionUseCase.kt$package com.devpush.features.game.domain.usecase</ID>
+    <ID>InvalidPackageDeclaration:ReviewCard.kt$package com.devpush.features.userRatingsReviews.ui.components</ID>
+    <ID>InvalidPackageDeclaration:ReviewDialog.kt$package com.devpush.features.userRatingsReviews.ui.components</ID>
+    <ID>InvalidPackageDeclaration:ReviewPreviewDialog.kt$package com.devpush.features.game.ui.components</ID>
+    <ID>InvalidPackageDeclaration:SafePullToRefreshBox.kt$package com.devpush.features.game.ui.components</ID>
+    <ID>InvalidPackageDeclaration:SafePullToRefreshBoxDemo.kt$package com.devpush.features.game.ui.components</ID>
+    <ID>InvalidPackageDeclaration:SafePullToRefreshBoxExamples.kt$package com.devpush.features.game.ui.components</ID>
+    <ID>InvalidPackageDeclaration:SearchFilterError.kt$package com.devpush.features.game.domain.model</ID>
+    <ID>InvalidPackageDeclaration:SearchFilterState.kt$package com.devpush.features.game.domain.model</ID>
+    <ID>InvalidPackageDeclaration:SearchGamesUseCase.kt$package com.devpush.features.game.domain.usecase</ID>
+    <ID>InvalidPackageDeclaration:SetUserRatingUseCase.kt$package com.devpush.features.userRatingsReviews.domain.usecase</ID>
+    <ID>InvalidPackageDeclaration:SetUserReviewUseCase.kt$package com.devpush.features.userRatingsReviews.domain.usecase</ID>
+    <ID>InvalidPackageDeclaration:StarRating.kt$package com.devpush.features.userRatingsReviews.ui.components</ID>
+    <ID>InvalidPackageDeclaration:StatisticsCard.kt$package com.devpush.features.userRatingsReviews.ui.statistics.components</ID>
+    <ID>InvalidPackageDeclaration:StatisticsScreen.kt$package com.devpush.features.userRatingsReviews.ui.statistics</ID>
+    <ID>InvalidPackageDeclaration:StatisticsUiState.kt$package com.devpush.features.userRatingsReviews.ui.statistics</ID>
+    <ID>InvalidPackageDeclaration:StatisticsViewModel.kt$package com.devpush.features.userRatingsReviews.ui.statistics</ID>
+    <ID>InvalidPackageDeclaration:UpdateCollectionUseCase.kt$package com.devpush.features.game.domain.usecase</ID>
+    <ID>InvalidPackageDeclaration:UserRating.kt$package com.devpush.features.userRatingsReviews.domain.model</ID>
+    <ID>InvalidPackageDeclaration:UserRatingReviewComponents.kt$package com.devpush.features.userRatingsReviews.ui.components</ID>
+    <ID>InvalidPackageDeclaration:UserRatingReviewError.kt$package com.devpush.features.userRatingsReviews.domain.model</ID>
+    <ID>InvalidPackageDeclaration:UserRatingReviewMappers.kt$package com.devpush.features.userRatingsReviews.data.mappers</ID>
+    <ID>InvalidPackageDeclaration:UserRatingReviewModule.kt$package com.devpush.features.userRatingsReviews.di</ID>
+    <ID>InvalidPackageDeclaration:UserRatingReviewRepository.kt$package com.devpush.features.userRatingsReviews.domain.repository</ID>
+    <ID>InvalidPackageDeclaration:UserRatingReviewRepositoryImpl.kt$package com.devpush.features.userRatingsReviews.data.repository</ID>
+    <ID>InvalidPackageDeclaration:UserRatingReviewValidator.kt$package com.devpush.features.userRatingsReviews.domain.validation</ID>
+    <ID>InvalidPackageDeclaration:UserRatingStats.kt$package com.devpush.features.userRatingsReviews.domain.model</ID>
+    <ID>InvalidPackageDeclaration:UserReview.kt$package com.devpush.features.userRatingsReviews.domain.model</ID>
+    <ID>LongMethod:ActiveFiltersChips.kt$@OptIn(ExperimentalLayoutApi::class) @Composable fun ActiveFiltersChips( searchQuery: String, selectedPlatforms: Set&lt;Platform&gt;, selectedGenres: Set&lt;Genre&gt;, minRating: Double, onRemoveSearch: () -&gt; Unit, onRemovePlatform: (Platform) -&gt; Unit, onRemoveGenre: (Genre) -&gt; Unit, onRemoveRating: () -&gt; Unit, onClearAll: () -&gt; Unit, modifier: Modifier = Modifier )</ID>
+    <ID>LongMethod:AddGamesToCollectionDialog.kt$@Composable fun AddGamesToCollectionDialog( availableGames: List&lt;Game&gt;, onDismiss: () -&gt; Unit, onAddGames: (List&lt;Int&gt;) -&gt; Unit, modifier: Modifier = Modifier, isLoading: Boolean = false )</ID>
+    <ID>LongMethod:CollectionCard.kt$@OptIn(ExperimentalFoundationApi::class) @Composable fun CollectionCard( collection: CollectionWithCount, onClick: () -&gt; Unit, onEdit: () -&gt; Unit, onDelete: () -&gt; Unit, onViewDetails: (() -&gt; Unit)? = null, onShare: (() -&gt; Unit)? = null, modifier: Modifier = Modifier )</ID>
+    <ID>LongMethod:CollectionDetailScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun CollectionDetailScreen( collectionId: String, modifier: Modifier = Modifier, onNavigateBack: () -&gt; Unit = {}, onGameClick: (Int) -&gt; Unit = {} )</ID>
+    <ID>LongMethod:CollectionFilterPanel.kt$@OptIn(ExperimentalLayoutApi::class) @Composable fun CollectionFilterPanel( filterState: CollectionFilterState, onFilterStateChanged: (CollectionFilterState) -&gt; Unit, onClearFilters: () -&gt; Unit, modifier: Modifier = Modifier )</ID>
+    <ID>LongMethod:CollectionGameCard.kt$@Composable fun CollectionGameCard( game: Game, onGameClick: () -&gt; Unit, onRemoveFromCollection: () -&gt; Unit, modifier: Modifier = Modifier, showRemoveButton: Boolean = true )</ID>
+    <ID>LongMethod:CollectionGameCard.kt$@Composable fun CollectionGameCard( gameWithUserData: GameWithUserData, onClick: () -&gt; Unit, onRemove: () -&gt; Unit, modifier: Modifier = Modifier, showRemoveButton: Boolean = true, onQuickRating: ((Int) -&gt; Unit)? = null, onReviewPreview: (() -&gt; Unit)? = null )</ID>
+    <ID>LongMethod:CollectionsScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun CollectionsScreen( modifier: Modifier = Modifier, onCollectionClick: (String) -&gt; Unit = {}, onNavigateBack: () -&gt; Unit = {} )</ID>
+    <ID>LongMethod:CreateCollectionDialog.kt$@Composable fun CreateCollectionDialog( onDismiss: () -&gt; Unit, onCreateCollection: (name: String, type: CollectionType) -&gt; Unit, modifier: Modifier = Modifier, existingCollectionNames: List&lt;String&gt; = emptyList() )</ID>
+    <ID>LongMethod:DeleteCollectionConfirmationDialog.kt$@Composable fun DeleteCollectionConfirmationDialog( collection: GameCollection, onConfirm: () -&gt; Unit, onDismiss: () -&gt; Unit, isDeleting: Boolean = false, error: String? = null )</ID>
+    <ID>LongMethod:EditCollectionDialog.kt$@Composable fun EditCollectionDialog( collection: GameCollection, onDismiss: () -&gt; Unit, onUpdateCollection: (name: String, description: String?) -&gt; Unit, isLoading: Boolean = false, error: String? = null )</ID>
+    <ID>LongMethod:FilterPanel.kt$@OptIn(ExperimentalLayoutApi::class) @Composable fun FilterPanel( availablePlatforms: List&lt;Platform&gt;, availableGenres: List&lt;Genre&gt;, selectedPlatforms: Set&lt;Platform&gt;, selectedGenres: Set&lt;Genre&gt;, minRating: Double, onPlatformToggle: (Platform) -&gt; Unit, onGenreToggle: (Genre) -&gt; Unit, onRatingChange: (Double) -&gt; Unit, onClearFilters: () -&gt; Unit, modifier: Modifier = Modifier )</ID>
+    <ID>LongMethod:GameDetailsScreen.kt$@OptIn(ExperimentalLayoutApi::class) @Composable fun GameDetailsScreenContent( modifier: Modifier = Modifier, uiState: GameDetailsUiState, onDelete: (Int) -&gt; Unit, onSave: (id: Int, title: String, image: String) -&gt; Unit, onBackClick: () -&gt; Unit, onShowAddToCollectionDialog: () -&gt; Unit = {}, onQuickAddToCollection: (CollectionType) -&gt; Unit = {}, onAddToCollection: (com.devpush.features.game.domain.model.collections.GameCollection) -&gt; Unit = {}, onHideAddToCollectionDialog: () -&gt; Unit = {}, onRatingChanged: (Int) -&gt; Unit = {}, onShowReviewDialog: () -&gt; Unit = {}, onHideReviewDialog: () -&gt; Unit = {}, onSaveReview: (String) -&gt; Unit = {}, onDeleteReview: () -&gt; Unit = {} )</ID>
+    <ID>LongMethod:GameScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun GameScreen( modifier: Modifier = Modifier, onClick: (Int) -&gt; Unit, onNavigateToCollections: () -&gt; Unit = {}, onNavigateToStatistics: () -&gt; Unit = {} )</ID>
+    <ID>LongMethod:QuickRating.kt$@Composable fun QuickRating( currentRating: Int, onRatingChanged: (Int) -&gt; Unit, modifier: Modifier = Modifier, showRatingDialog: Boolean = false, onShowRatingDialog: () -&gt; Unit = {}, onHideRatingDialog: () -&gt; Unit = {} )</ID>
+    <ID>LongMethod:QuickRating.kt$@Composable private fun QuickRatingDialog( currentRating: Int, onRatingSelected: (Int) -&gt; Unit, onDismiss: () -&gt; Unit )</ID>
+    <ID>LongMethod:RatingDistributionChart.kt$@Composable fun RatingDistributionChart( stats: UserRatingStats, modifier: Modifier = Modifier )</ID>
+    <ID>LongMethod:ReviewDialog.kt$@Composable fun ReviewDialog( isVisible: Boolean, initialReviewText: String = "", onDismiss: () -&gt; Unit, onSave: (String) -&gt; Unit, modifier: Modifier = Modifier, maxCharacters: Int = 1000, isEditing: Boolean = false )</ID>
+    <ID>LongMethod:ReviewPreviewDialog.kt$@Composable fun ReviewPreviewDialog( gameWithUserData: GameWithUserData, onDismiss: () -&gt; Unit, onEditReview: (() -&gt; Unit)? = null )</ID>
+    <ID>LongMethod:StatisticsScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun StatisticsScreen( onNavigateBack: () -&gt; Unit, onGameClick: (Int) -&gt; Unit, modifier: Modifier = Modifier )</ID>
+    <ID>LongParameterList:ActiveFiltersChips.kt$( searchQuery: String, selectedPlatforms: Set&lt;Platform&gt;, selectedGenres: Set&lt;Genre&gt;, minRating: Double, onRemoveSearch: () -&gt; Unit, onRemovePlatform: (Platform) -&gt; Unit, onRemoveGenre: (Genre) -&gt; Unit, onRemoveRating: () -&gt; Unit, onClearAll: () -&gt; Unit, modifier: Modifier = Modifier )</ID>
+    <ID>LongParameterList:CollectionGrid.kt$( collections: List&lt;CollectionWithCount&gt;, onCollectionClick: (String) -&gt; Unit, onEditCollection: (CollectionWithCount) -&gt; Unit, onDeleteCollection: (CollectionWithCount) -&gt; Unit, onViewCollectionDetails: ((CollectionWithCount) -&gt; Unit)? = null, onShareCollection: ((CollectionWithCount) -&gt; Unit)? = null, isLoading: Boolean = false, error: CollectionError? = null, modifier: Modifier = Modifier, contentPadding: PaddingValues = PaddingValues(16.dp) )</ID>
+    <ID>LongParameterList:ExpandableFilterLayout.kt$( searchFilterState: SearchFilterState, availablePlatforms: List&lt;Platform&gt;, availableGenres: List&lt;Genre&gt;, onPlatformToggle: (Platform) -&gt; Unit, onGenreToggle: (Genre) -&gt; Unit, onRatingChange: (Double) -&gt; Unit, onClearFilters: () -&gt; Unit, isCompactLayout: Boolean = true, modifier: Modifier = Modifier )</ID>
+    <ID>LongParameterList:ExpandableFilterLayout.kt$( searchFilterState: SearchFilterState, availablePlatforms: List&lt;Platform&gt;, availableGenres: List&lt;Genre&gt;, onPlatformToggle: (Platform) -&gt; Unit, onGenreToggle: (Genre) -&gt; Unit, onRatingChange: (Double) -&gt; Unit, onClearFilters: () -&gt; Unit, modifier: Modifier = Modifier )</ID>
+    <ID>LongParameterList:FilterPanel.kt$( availablePlatforms: List&lt;Platform&gt;, availableGenres: List&lt;Genre&gt;, selectedPlatforms: Set&lt;Platform&gt;, selectedGenres: Set&lt;Genre&gt;, minRating: Double, onPlatformToggle: (Platform) -&gt; Unit, onGenreToggle: (Genre) -&gt; Unit, onRatingChange: (Double) -&gt; Unit, onClearFilters: () -&gt; Unit, modifier: Modifier = Modifier )</ID>
+    <ID>LongParameterList:GameDetailsScreen.kt$( modifier: Modifier = Modifier, uiState: GameDetailsUiState, onDelete: (Int) -&gt; Unit, onSave: (id: Int, title: String, image: String) -&gt; Unit, onBackClick: () -&gt; Unit, onShowAddToCollectionDialog: () -&gt; Unit = {}, onQuickAddToCollection: (CollectionType) -&gt; Unit = {}, onAddToCollection: (com.devpush.features.game.domain.model.collections.GameCollection) -&gt; Unit = {}, onHideAddToCollectionDialog: () -&gt; Unit = {}, onRatingChanged: (Int) -&gt; Unit = {}, onShowReviewDialog: () -&gt; Unit = {}, onHideReviewDialog: () -&gt; Unit = {}, onSaveReview: (String) -&gt; Unit = {}, onDeleteReview: () -&gt; Unit = {} )</ID>
+    <ID>LongParameterList:StarRating.kt$( rating: Int, onRatingChanged: ((Int) -&gt; Unit)? = null, modifier: Modifier = Modifier, maxRating: Int = 5, starSize: Dp = 24.dp, starColor: Color = MaterialTheme.colorScheme.primary, emptyStarColor: Color = MaterialTheme.colorScheme.outline, contentDescription: String? = null )</ID>
+    <ID>LongParameterList:UserRatingReviewMappers.kt$( gameId: Long, gameName: String, gameImage: String, gameRating: Double, gameReleaseDate: String?, userRating: Long?, userRatingCreatedAt: Long?, userRatingUpdatedAt: Long?, userReview: String?, userReviewCreatedAt: Long?, userReviewUpdatedAt: Long? )</ID>
+    <ID>MaxLineLength:AddToCollectionDialog.kt$text = "${collection.getGameCount()} ${if (collection.getGameCount() == 1) "game" else "games"}"</ID>
+    <ID>MaxLineLength:AddToCollectionDialog.kt$val currentCollection = collections.find { it.containsGame(game.id) &amp;&amp; it.type.isStatusCollection() }</ID>
+    <ID>MaxLineLength:CollectionDetailScreen.kt$uiState.value.filteredGamesWithUserData.isEmpty() &amp;&amp; uiState.value.gamesWithUserData.isNotEmpty()</ID>
+    <ID>MaxLineLength:CollectionDetailScreen.kt$uiState.value.filteredGamesWithUserData.size != uiState.value.gamesWithUserData.size</ID>
+    <ID>MaxLineLength:CollectionError.kt$CollectionError.CollectionCapacityExceeded$override val suggestedAction: String = "This collection is full. Please remove some games or create a new collection"</ID>
+    <ID>MaxLineLength:CollectionError.kt$CollectionError.CollectionLimitExceeded$override val suggestedAction: String = "You've reached the maximum number of collections. Please delete some collections first"</ID>
+    <ID>MaxLineLength:CollectionError.kt$CollectionError.CollectionNotFound$override val suggestedAction: String = "The collection may have been deleted. Please refresh the collections list"</ID>
+    <ID>MaxLineLength:CollectionError.kt$CollectionError.ConfirmationRequired$override val technicalMessage: String = "User confirmation required for game $gameId move from $fromCollectionId to $toCollectionId"</ID>
+    <ID>MaxLineLength:CollectionError.kt$CollectionError.DefaultCollectionProtected$data</ID>
+    <ID>MaxLineLength:CollectionError.kt$CollectionError.DefaultCollectionProtected$override val technicalMessage: String = "Operation '$operation' not allowed on default collection type: $collectionType"</ID>
+    <ID>MaxLineLength:CollectionError.kt$CollectionError.ImportError$override val suggestedAction: String = "There was a problem importing your collections. Please check the file and try again"</ID>
+    <ID>MaxLineLength:CollectionError.kt$CollectionError.PerformanceError$override val suggestedAction: String = "This is taking longer than usual. Please wait or try with fewer collections"</ID>
+    <ID>MaxLineLength:CollectionError.kt$CollectionError.SyncConflictError$override val suggestedAction: String = "Some collections have conflicts. Please review and resolve them manually"</ID>
+    <ID>MaxLineLength:CollectionError.kt$CollectionError.SyncError$override val suggestedAction: String = "Unable to sync your collections. Check your internet connection and try again"</ID>
+    <ID>MaxLineLength:CollectionFilterPanel.kt$text = "Rating Range: ${if (filterState.minUserRating &gt; 0) filterState.minUserRating else "Any"} - ${filterState.maxUserRating} stars"</ID>
+    <ID>MaxLineLength:CollectionInitializationService.kt$CollectionInitializationServiceImpl$checkResult.exceptionOrNull() ?: CollectionError.UnknownError("Failed to check initialization status")</ID>
+    <ID>MaxLineLength:CollectionInitializationService.kt$CollectionInitializationServiceImpl$initResult.exceptionOrNull() ?: CollectionError.UnknownError("Failed to initialize default collections")</ID>
+    <ID>MaxLineLength:ConstrainedScrollableContainer.kt$println("ConstrainedScrollableContainer: maxHeight = ${if (maxHeight == androidx.compose.ui.unit.Dp.Infinity) "Infinity" else maxHeight}")</ID>
+    <ID>MaxLineLength:ConstrainedScrollableContainer.kt$println("FlexibleConstrainedScrollableContainer: maxHeight = ${if (maxHeight == androidx.compose.ui.unit.Dp.Infinity) "Infinity" else maxHeight}")</ID>
+    <ID>MaxLineLength:DeleteCollectionConfirmationDialog.kt$"This will permanently delete the collection and remove all ${gameCount} ${if (gameCount == 1) "game" else "games"} from it. The games themselves will not be deleted from your library."</ID>
+    <ID>MaxLineLength:DeleteCollectionConfirmationDialog.kt$text = "Default collections (Wishlist, Currently Playing, Completed) are essential for the app's functionality and cannot be removed."</ID>
+    <ID>MaxLineLength:DeleteCollectionConfirmationDialog.kt$tint = if (isDefaultCollection) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.error</ID>
+    <ID>MaxLineLength:DeleteCollectionUseCase.kt$DeleteCollectionUseCaseImpl$gameCount &gt; 0 -&gt; "This collection contains $gameCount game${if (gameCount == 1) "" else "s"}. Deleting it will remove all games from this collection."</ID>
+    <ID>MaxLineLength:DeleteCollectionUseCase.kt$DeleteCollectionUseCaseImpl$isDefaultCollection -&gt; "This is a default collection and cannot be deleted. You can only clear its contents."</ID>
+    <ID>MaxLineLength:EditCollectionDialog.kt$text = "Editing default collections may affect the app experience. Consider carefully before making changes."</ID>
+    <ID>MaxLineLength:EmptyStates.kt$text = "Create your first collection to organize your games by categories like Wishlist, Currently Playing, or custom themes."</ID>
+    <ID>MaxLineLength:EmptyStates.kt$text = "• Wishlist • Currently Playing • Completed\n• Indie Favorites • Multiplayer Games • Retro Classics"</ID>
+    <ID>MaxLineLength:GameCard.kt$contentDescription = if (collectionsContainingGame.isNotEmpty()) "In collections" else "Add to collection"</ID>
+    <ID>MaxLineLength:GameCard.kt$imageVector = if (collectionsContainingGame.isNotEmpty()) Icons.Default.Check else Icons.Default.Add</ID>
+    <ID>MaxLineLength:GameCollection.kt$GameCollection$!name.matches(Regex("^[a-zA-Z0-9\\s\\-_'\".,!?()]+$")) -&gt; ValidationResult.Invalid("Collection name contains invalid characters")</ID>
+    <ID>MaxLineLength:GameCollection.kt$GameCollection$fun</ID>
+    <ID>MaxLineLength:GameCollectionRepositoryImpl.kt$GameCollectionRepositoryImpl$CollectionError.ValidationError("collection", validationResult.getErrorMessage() ?: "Invalid collection")</ID>
+    <ID>MaxLineLength:GameCollectionRepositoryImpl.kt$GameCollectionRepositoryImpl$val existingCollection = appDatabase.appDatabaseQueries.getCollectionById(collection.id).executeAsOneOrNull()</ID>
+    <ID>MaxLineLength:GameCollectionRepositoryImpl.kt$GameCollectionRepositoryImpl$val gameExists = appDatabase.appDatabaseQueries.checkGameInCollection(collectionId, gameId.toLong()).executeAsOne()</ID>
+    <ID>MaxLineLength:GameDetailsScreen.kt$imageVector = if (isInCollection) Icons.Default.Check else getCollectionTypeIcon(collectionType)</ID>
+    <ID>MaxLineLength:InitializeDefaultCollectionsUseCase.kt$InitializeDefaultCollectionsUseCaseImpl$val defaultTypes = com.devpush.features.game.domain.model.collections.CollectionType.getDefaultTypes()</ID>
+    <ID>MaxLineLength:ManageCollectionStatusUseCase.kt$ManageCollectionStatusUseCaseImpl$return Result.failure(confirmationResult.exceptionOrNull() ?: CollectionError.UnknownError("Failed to get confirmation details"))</ID>
+    <ID>MaxLineLength:ManageCollectionStatusUseCase.kt$ManageCollectionStatusUseCaseImpl$return Result.failure(currentCollectionResult.exceptionOrNull() ?: CollectionError.CollectionNotFound(currentCollectionId))</ID>
+    <ID>MaxLineLength:ManageCollectionStatusUseCase.kt$ManageCollectionStatusUseCaseImpl$return Result.failure(fromCollectionResult.exceptionOrNull() ?: CollectionError.CollectionNotFound(fromCollectionId))</ID>
+    <ID>MaxLineLength:ManageCollectionStatusUseCase.kt$ManageCollectionStatusUseCaseImpl$return Result.failure(moveResult.exceptionOrNull() ?: CollectionError.UnknownError("Failed to move to next status"))</ID>
+    <ID>MaxLineLength:ManageCollectionStatusUseCase.kt$ManageCollectionStatusUseCaseImpl$return Result.failure(toCollectionResult.exceptionOrNull() ?: CollectionError.CollectionNotFound(toCollectionId))</ID>
+    <ID>MaxLineLength:QuickRating.kt$hapticFeedback.performHapticFeedback(androidx.compose.ui.hapticfeedback.HapticFeedbackType.LongPress)</ID>
+    <ID>MaxLineLength:RemoveGameFromCollectionUseCase.kt$RemoveGameFromCollectionUseCaseImpl$errors.add(CollectionError.UnknownError("Failed to process collection $collectionId: ${error.message}"))</ID>
+    <ID>MaxLineLength:ReviewPreviewDialog.kt$reviewText = "This game completely redefined what an open-world adventure could be. The freedom to explore, the physics-based puzzles, and the sheer beauty of Hyrule make this an unforgettable experience. Every mountain peak calls to be climbed, every shrine offers a unique challenge. A masterpiece that will be remembered for years to come."</ID>
+    <ID>MaxLineLength:SafePullToRefreshBox.kt$// if (hasInfiniteHeight) Log.w("SafePullToRefreshBox", "Infinite height constraint detected - using fallback")</ID>
+    <ID>MaxLineLength:SearchFilterError.kt$SearchFilterError.FilterCombinationError$override val suggestedAction: String = "This combination of filters is not supported. Please adjust your selection"</ID>
+    <ID>MaxLineLength:SearchFilterError.kt$SearchFilterError.OfflineError$override val suggestedAction: String = "You're viewing cached data. Connect to the internet for the latest games"</ID>
+    <ID>MaxLineLength:UpdateCollectionUseCase.kt$UpdateCollectionUseCaseImpl$newDescription = if (updatedCollection.description != currentCollection.description) updatedCollection.description else null</ID>
+    <ID>MaxLineLength:UserRatingReviewError.kt$UserRatingReviewError.GameNotFound$override val suggestedAction: String = "The game you're trying to rate doesn't exist. Please refresh and try again"</ID>
+    <ID>MaxLineLength:UserRatingReviewError.kt$UserRatingReviewError.ReviewTooLong$data</ID>
+    <ID>MaxLineLength:UserRatingReviewError.kt$UserRatingReviewError.ReviewTooLong$override val technicalMessage: String = "Review text exceeds maximum length of $maxLength characters, got: $length"</ID>
+    <ID>MaxLineLength:UserRatingReviewRepositoryImpl.kt$UserRatingReviewRepositoryImpl$// val userRating = ratingEntity?.let { createUserRatingFromRow(it.game_id, it.rating, it.created_at, it.updated_at) }</ID>
+    <ID>MaxLineLength:UserRatingReviewRepositoryImpl.kt$UserRatingReviewRepositoryImpl$// val userRatings = ratingEntities.map { createUserRatingFromRow(it.game_id, it.rating, it.created_at, it.updated_at) }</ID>
+    <ID>MaxLineLength:UserRatingReviewValidator.kt$UserRatingReviewValidator$"Please shorten your review to ${error.maxLength} characters or less (currently ${error.length} characters)"</ID>
+    <ID>MaxLineLength:UserRatingStats.kt$UserRatingStats$"Rating distribution sum (${ratingDistribution.values.sum()}) must equal total rated games ($totalRatedGames)"</ID>
+    <ID>NestedBlockDepth:AddGameToCollectionUseCase.kt$AddGameToCollectionUseCaseImpl$override suspend fun getTransitionInfo( gameId: Int, targetCollectionId: String ): Result&lt;TransitionInfo&gt;</ID>
+    <ID>NestedBlockDepth:GetGamesWithUserDataUseCase.kt$GetGamesWithUserDataUseCase$suspend operator fun invoke(gameIds: List&lt;Int&gt;): Result&lt;List&lt;GameWithUserData&gt;&gt;</ID>
+    <ID>NestedBlockDepth:UpdateCollectionUseCase.kt$UpdateCollectionUseCaseImpl$override suspend fun validateUpdate( collectionId: String, newName: String?, newDescription: String? ): Result&lt;UpdateValidationInfo&gt;</ID>
+    <ID>NewLineAtEndOfFile:ActiveFiltersChips.kt$com.devpush.features.game.ui.components.ActiveFiltersChips.kt</ID>
+    <ID>NewLineAtEndOfFile:AddGameToCollectionUseCase.kt$com.devpush.features.game.domain.usecase.AddGameToCollectionUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:AddGamesToCollectionDialog.kt$com.devpush.features.game.ui.collections.components.AddGamesToCollectionDialog.kt</ID>
+    <ID>NewLineAtEndOfFile:AddToCollectionDialog.kt$com.devpush.features.game.ui.components.AddToCollectionDialog.kt</ID>
+    <ID>NewLineAtEndOfFile:CollectionCard.kt$com.devpush.features.game.ui.components.CollectionCard.kt</ID>
+    <ID>NewLineAtEndOfFile:CollectionDetailScreen.kt$com.devpush.features.game.ui.collections.CollectionDetailScreen.kt</ID>
+    <ID>NewLineAtEndOfFile:CollectionDetailViewModel.kt$com.devpush.features.game.ui.collections.CollectionDetailViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:CollectionError.kt$com.devpush.features.game.domain.model.collections.CollectionError.kt</ID>
+    <ID>NewLineAtEndOfFile:CollectionFilterPanel.kt$com.devpush.features.game.ui.collections.components.CollectionFilterPanel.kt</ID>
+    <ID>NewLineAtEndOfFile:CollectionFilterState.kt$com.devpush.features.game.domain.model.collections.CollectionFilterState.kt</ID>
+    <ID>NewLineAtEndOfFile:CollectionGameCard.kt$com.devpush.features.game.ui.collections.components.CollectionGameCard.kt</ID>
+    <ID>NewLineAtEndOfFile:CollectionGameCard.kt$com.devpush.features.game.ui.components.CollectionGameCard.kt</ID>
+    <ID>NewLineAtEndOfFile:CollectionGrid.kt$com.devpush.features.game.ui.collections.components.CollectionGrid.kt</ID>
+    <ID>NewLineAtEndOfFile:CollectionInitializationService.kt$com.devpush.features.game.domain.service.CollectionInitializationService.kt</ID>
+    <ID>NewLineAtEndOfFile:CollectionMappers.kt$com.devpush.features.game.data.mappers.CollectionMappers.kt</ID>
+    <ID>NewLineAtEndOfFile:CollectionType.kt$com.devpush.features.game.domain.model.collections.CollectionType.kt</ID>
+    <ID>NewLineAtEndOfFile:CollectionsScreen.kt$com.devpush.features.game.ui.collections.CollectionsScreen.kt</ID>
+    <ID>NewLineAtEndOfFile:CollectionsViewModel.kt$com.devpush.features.game.ui.collections.CollectionsViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:ConstrainedScrollableContainer.kt$com.devpush.features.ui.components.ConstrainedScrollableContainer.kt</ID>
+    <ID>NewLineAtEndOfFile:CreateCollectionDialog.kt$com.devpush.features.game.ui.collections.components.CreateCollectionDialog.kt</ID>
+    <ID>NewLineAtEndOfFile:CreateCollectionUseCase.kt$com.devpush.features.game.domain.usecase.CreateCollectionUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:DeleteCollectionConfirmationDialog.kt$com.devpush.features.game.ui.collections.components.DeleteCollectionConfirmationDialog.kt</ID>
+    <ID>NewLineAtEndOfFile:DeleteCollectionUseCase.kt$com.devpush.features.game.domain.usecase.DeleteCollectionUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:DeleteUserRatingUseCase.kt$com.devpush.features.userRatingsReviews.domain.usecase.DeleteUserRatingUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:DeleteUserReviewUseCase.kt$com.devpush.features.userRatingsReviews.domain.usecase.DeleteUserReviewUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:EditCollectionDialog.kt$com.devpush.features.game.ui.collections.components.EditCollectionDialog.kt</ID>
+    <ID>NewLineAtEndOfFile:EmptySearchResults.kt$com.devpush.features.game.ui.components.EmptySearchResults.kt</ID>
+    <ID>NewLineAtEndOfFile:EmptyStates.kt$com.devpush.features.game.ui.collections.components.EmptyStates.kt</ID>
+    <ID>NewLineAtEndOfFile:ExpandableFilterLayout.kt$com.devpush.features.game.ui.components.ExpandableFilterLayout.kt</ID>
+    <ID>NewLineAtEndOfFile:FilterCollectionGamesUseCase.kt$com.devpush.features.game.domain.usecase.FilterCollectionGamesUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:FilterGamesUseCase.kt$com.devpush.features.game.domain.usecase.FilterGamesUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:FilterPanel.kt$com.devpush.features.game.ui.components.FilterPanel.kt</ID>
+    <ID>NewLineAtEndOfFile:FilterToggleButton.kt$com.devpush.features.game.ui.components.FilterToggleButton.kt</ID>
+    <ID>NewLineAtEndOfFile:FilterValidator.kt$com.devpush.features.game.domain.validation.FilterValidator.kt</ID>
+    <ID>NewLineAtEndOfFile:GameCard.kt$com.devpush.features.game.ui.components.GameCard.kt</ID>
+    <ID>NewLineAtEndOfFile:GameCollection.kt$com.devpush.features.game.domain.model.collections.GameCollection.kt</ID>
+    <ID>NewLineAtEndOfFile:GameCollectionDomainModule.kt$com.devpush.features.game.domain.di.GameCollectionDomainModule.kt</ID>
+    <ID>NewLineAtEndOfFile:GameCollectionModule.kt$com.devpush.features.game.data.di.GameCollectionModule.kt</ID>
+    <ID>NewLineAtEndOfFile:GameCollectionRepository.kt$com.devpush.features.game.domain.repository.GameCollectionRepository.kt</ID>
+    <ID>NewLineAtEndOfFile:GameCollectionRepositoryImpl.kt$com.devpush.features.game.data.repository.GameCollectionRepositoryImpl.kt</ID>
+    <ID>NewLineAtEndOfFile:GameCollectionViewModelModule.kt$com.devpush.features.game.ui.di.GameCollectionViewModelModule.kt</ID>
+    <ID>NewLineAtEndOfFile:GameDetailsMapper.kt$com.devpush.features.gameDetails.data.mappers.GameDetailsMapper.kt</ID>
+    <ID>NewLineAtEndOfFile:GameDetailsModule.kt$com.devpush.features.gameDetails.data.di.GameDetailsModule.kt</ID>
+    <ID>NewLineAtEndOfFile:GameDetailsRepository.kt$com.devpush.features.gameDetails.domain.repository.GameDetailsRepository.kt</ID>
+    <ID>NewLineAtEndOfFile:GameDetailsRepositoryImpl.kt$com.devpush.features.gameDetails.data.repository.GameDetailsRepositoryImpl.kt</ID>
+    <ID>NewLineAtEndOfFile:GameDetailsScreen.kt$com.devpush.features.gameDetails.ui.GameDetailsScreen.kt</ID>
+    <ID>NewLineAtEndOfFile:GameDetailsViewModel.kt$com.devpush.features.gameDetails.ui.GameDetailsViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:GameDetailsViewModel.kt$com.devpush.features.gameDetails.ui.di.GameDetailsViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:GameDomainModule.kt$com.devpush.features.game.domain.di.GameDomainModule.kt</ID>
+    <ID>NewLineAtEndOfFile:GameList.kt$com.devpush.features.game.ui.components.GameList.kt</ID>
+    <ID>NewLineAtEndOfFile:GameMapper.kt$com.devpush.features.game.data.mappers.GameMapper.kt</ID>
+    <ID>NewLineAtEndOfFile:GameModule.kt$com.devpush.features.game.data.di.GameModule.kt</ID>
+    <ID>NewLineAtEndOfFile:GameRepository.kt$com.devpush.features.game.domain.repository.GameRepository.kt</ID>
+    <ID>NewLineAtEndOfFile:GameRepositoryImpl.kt$com.devpush.features.game.data.repository.GameRepositoryImpl.kt</ID>
+    <ID>NewLineAtEndOfFile:GameScreen.kt$com.devpush.features.game.ui.GameScreen.kt</ID>
+    <ID>NewLineAtEndOfFile:GameSearchBar.kt$com.devpush.features.game.ui.components.GameSearchBar.kt</ID>
+    <ID>NewLineAtEndOfFile:GameViewModel.kt$com.devpush.features.game.ui.GameViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:GameViewModelModule.kt$com.devpush.features.game.ui.di.GameViewModelModule.kt</ID>
+    <ID>NewLineAtEndOfFile:GameWithUserData.kt$com.devpush.features.userRatingsReviews.domain.model.GameWithUserData.kt</ID>
+    <ID>NewLineAtEndOfFile:Genre.kt$com.devpush.features.game.domain.model.Genre.kt</ID>
+    <ID>NewLineAtEndOfFile:GenreMapper.kt$com.devpush.features.game.data.mappers.GenreMapper.kt</ID>
+    <ID>NewLineAtEndOfFile:GetAvailableFiltersUseCase.kt$com.devpush.features.game.domain.usecase.GetAvailableFiltersUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:GetCollectionsUseCase.kt$com.devpush.features.game.domain.usecase.GetCollectionsUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:GetGameWithUserDataUseCase.kt$com.devpush.features.userRatingsReviews.domain.usecase.GetGameWithUserDataUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:GetGamesWithUserDataUseCase.kt$com.devpush.features.userRatingsReviews.domain.usecase.GetGamesWithUserDataUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:GetRecentUserActivityUseCase.kt$com.devpush.features.userRatingsReviews.domain.usecase.GetRecentUserActivityUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:GetUserRatingStatsUseCase.kt$com.devpush.features.userRatingsReviews.domain.usecase.GetUserRatingStatsUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:GetUserRatingUseCase.kt$com.devpush.features.userRatingsReviews.domain.usecase.GetUserRatingUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:GetUserReviewUseCase.kt$com.devpush.features.userRatingsReviews.domain.usecase.GetUserReviewUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:InitializeDefaultCollectionsUseCase.kt$com.devpush.features.game.domain.usecase.InitializeDefaultCollectionsUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:InputSanitizer.kt$com.devpush.features.userRatingsReviews.domain.validation.InputSanitizer.kt</ID>
+    <ID>NewLineAtEndOfFile:ManageCollectionStatusUseCase.kt$com.devpush.features.game.domain.usecase.ManageCollectionStatusUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:OfflineManager.kt$com.devpush.features.game.data.cache.OfflineManager.kt</ID>
+    <ID>NewLineAtEndOfFile:Platform.kt$com.devpush.features.game.domain.model.Platform.kt</ID>
+    <ID>NewLineAtEndOfFile:PlatformMapper.kt$com.devpush.features.game.data.mappers.PlatformMapper.kt</ID>
+    <ID>NewLineAtEndOfFile:QuickRating.kt$com.devpush.features.userRatingsReviews.ui.components.QuickRating.kt</ID>
+    <ID>NewLineAtEndOfFile:RatingDistributionChart.kt$com.devpush.features.userRatingsReviews.ui.statistics.components.RatingDistributionChart.kt</ID>
+    <ID>NewLineAtEndOfFile:RecentActivityList.kt$com.devpush.features.userRatingsReviews.ui.statistics.components.RecentActivityList.kt</ID>
+    <ID>NewLineAtEndOfFile:RemoveGameFromCollectionUseCase.kt$com.devpush.features.game.domain.usecase.RemoveGameFromCollectionUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:ReviewCard.kt$com.devpush.features.userRatingsReviews.ui.components.ReviewCard.kt</ID>
+    <ID>NewLineAtEndOfFile:ReviewDialog.kt$com.devpush.features.userRatingsReviews.ui.components.ReviewDialog.kt</ID>
+    <ID>NewLineAtEndOfFile:ReviewPreviewDialog.kt$com.devpush.features.game.ui.components.ReviewPreviewDialog.kt</ID>
+    <ID>NewLineAtEndOfFile:SafePullToRefreshBox.kt$com.devpush.features.game.ui.components.SafePullToRefreshBox.kt</ID>
+    <ID>NewLineAtEndOfFile:SafePullToRefreshBoxDemo.kt$com.devpush.features.game.ui.components.SafePullToRefreshBoxDemo.kt</ID>
+    <ID>NewLineAtEndOfFile:SafePullToRefreshBoxExamples.kt$com.devpush.features.game.ui.components.SafePullToRefreshBoxExamples.kt</ID>
+    <ID>NewLineAtEndOfFile:SearchFilterError.kt$com.devpush.features.game.domain.model.SearchFilterError.kt</ID>
+    <ID>NewLineAtEndOfFile:SearchFilterState.kt$com.devpush.features.game.domain.model.SearchFilterState.kt</ID>
+    <ID>NewLineAtEndOfFile:SearchGamesUseCase.kt$com.devpush.features.game.domain.usecase.SearchGamesUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:SetUserRatingUseCase.kt$com.devpush.features.userRatingsReviews.domain.usecase.SetUserRatingUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:SetUserReviewUseCase.kt$com.devpush.features.userRatingsReviews.domain.usecase.SetUserReviewUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:StarRating.kt$com.devpush.features.userRatingsReviews.ui.components.StarRating.kt</ID>
+    <ID>NewLineAtEndOfFile:StatisticsCard.kt$com.devpush.features.userRatingsReviews.ui.statistics.components.StatisticsCard.kt</ID>
+    <ID>NewLineAtEndOfFile:StatisticsScreen.kt$com.devpush.features.userRatingsReviews.ui.statistics.StatisticsScreen.kt</ID>
+    <ID>NewLineAtEndOfFile:StatisticsUiState.kt$com.devpush.features.userRatingsReviews.ui.statistics.StatisticsUiState.kt</ID>
+    <ID>NewLineAtEndOfFile:StatisticsViewModel.kt$com.devpush.features.userRatingsReviews.ui.statistics.StatisticsViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:UpdateCollectionUseCase.kt$com.devpush.features.game.domain.usecase.UpdateCollectionUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:UserRating.kt$com.devpush.features.userRatingsReviews.domain.model.UserRating.kt</ID>
+    <ID>NewLineAtEndOfFile:UserRatingReviewComponents.kt$com.devpush.features.userRatingsReviews.ui.components.UserRatingReviewComponents.kt</ID>
+    <ID>NewLineAtEndOfFile:UserRatingReviewError.kt$com.devpush.features.userRatingsReviews.domain.model.UserRatingReviewError.kt</ID>
+    <ID>NewLineAtEndOfFile:UserRatingReviewMappers.kt$com.devpush.features.userRatingsReviews.data.mappers.UserRatingReviewMappers.kt</ID>
+    <ID>NewLineAtEndOfFile:UserRatingReviewModule.kt$com.devpush.features.userRatingsReviews.di.UserRatingReviewModule.kt</ID>
+    <ID>NewLineAtEndOfFile:UserRatingReviewRepository.kt$com.devpush.features.userRatingsReviews.domain.repository.UserRatingReviewRepository.kt</ID>
+    <ID>NewLineAtEndOfFile:UserRatingReviewRepositoryImpl.kt$com.devpush.features.userRatingsReviews.data.repository.UserRatingReviewRepositoryImpl.kt</ID>
+    <ID>NewLineAtEndOfFile:UserRatingReviewValidator.kt$com.devpush.features.userRatingsReviews.domain.validation.UserRatingReviewValidator.kt</ID>
+    <ID>NewLineAtEndOfFile:UserRatingStats.kt$com.devpush.features.userRatingsReviews.domain.model.UserRatingStats.kt</ID>
+    <ID>NewLineAtEndOfFile:UserReview.kt$com.devpush.features.userRatingsReviews.domain.model.UserReview.kt</ID>
+    <ID>ReturnCount:AddGameToCollectionUseCase.kt$AddGameToCollectionUseCaseImpl$override suspend fun addToCollectionByType( gameId: Int, collectionType: CollectionType, confirmTransition: Boolean ): Result&lt;Unit&gt;</ID>
+    <ID>ReturnCount:AddGameToCollectionUseCase.kt$AddGameToCollectionUseCaseImpl$override suspend fun getTransitionInfo( gameId: Int, targetCollectionId: String ): Result&lt;TransitionInfo&gt;</ID>
+    <ID>ReturnCount:AddGameToCollectionUseCase.kt$AddGameToCollectionUseCaseImpl$override suspend fun invoke( collectionId: String, gameId: Int, confirmTransition: Boolean ): Result&lt;Unit&gt;</ID>
+    <ID>ReturnCount:CreateCollectionUseCase.kt$CreateCollectionUseCaseImpl$override suspend fun initializeDefaultCollections(): Result&lt;List&lt;GameCollection&gt;&gt;</ID>
+    <ID>ReturnCount:CreateCollectionUseCase.kt$CreateCollectionUseCaseImpl$override suspend fun invoke( name: String, type: CollectionType, description: String? ): Result&lt;GameCollection&gt;</ID>
+    <ID>ReturnCount:CreateCollectionUseCase.kt$CreateCollectionUseCaseImpl$private fun validateInput( name: String, type: CollectionType, description: String? ): ValidationResult</ID>
+    <ID>ReturnCount:DeleteCollectionUseCase.kt$DeleteCollectionUseCaseImpl$override suspend fun clearCollection(collectionId: String): Result&lt;Unit&gt;</ID>
+    <ID>ReturnCount:DeleteCollectionUseCase.kt$DeleteCollectionUseCaseImpl$override suspend fun getDeletionInfo(collectionId: String): Result&lt;DeletionInfo&gt;</ID>
+    <ID>ReturnCount:DeleteCollectionUseCase.kt$DeleteCollectionUseCaseImpl$override suspend fun invoke( collectionId: String, confirmDeletion: Boolean, allowDefaultDeletion: Boolean ): Result&lt;DeletionInfo&gt;</ID>
+    <ID>ReturnCount:FilterCollectionGamesUseCase.kt$FilterCollectionGamesUseCase$private fun matchesFilters( gameWithUserData: GameWithUserData, filterState: CollectionFilterState ): Boolean</ID>
+    <ID>ReturnCount:FilterValidator.kt$FilterValidator$fun validateSearchFilterState( searchFilterState: SearchFilterState, availablePlatforms: List&lt;Platform&gt; = emptyList(), availableGenres: List&lt;Genre&gt; = emptyList() ): ValidationResult</ID>
+    <ID>ReturnCount:GameCollection.kt$GameCollection$fun validate(): ValidationResult</ID>
+    <ID>ReturnCount:GameCollectionRepositoryImpl.kt$GameCollectionRepositoryImpl$override suspend fun addGameToCollection(collectionId: String, gameId: Int): Result&lt;Unit&gt;</ID>
+    <ID>ReturnCount:GameCollectionRepositoryImpl.kt$GameCollectionRepositoryImpl$override suspend fun createCollection( name: String, type: CollectionType, description: String? ): Result&lt;GameCollection&gt;</ID>
+    <ID>ReturnCount:GameCollectionRepositoryImpl.kt$GameCollectionRepositoryImpl$override suspend fun deleteCollection(id: String): Result&lt;Unit&gt;</ID>
+    <ID>ReturnCount:GameCollectionRepositoryImpl.kt$GameCollectionRepositoryImpl$override suspend fun moveGameBetweenCollections( gameId: Int, fromCollectionId: String, toCollectionId: String ): Result&lt;Unit&gt;</ID>
+    <ID>ReturnCount:GameCollectionRepositoryImpl.kt$GameCollectionRepositoryImpl$override suspend fun removeGameFromCollection(collectionId: String, gameId: Int): Result&lt;Unit&gt;</ID>
+    <ID>ReturnCount:GameCollectionRepositoryImpl.kt$GameCollectionRepositoryImpl$override suspend fun updateCollection(collection: GameCollection): Result&lt;GameCollection&gt;</ID>
+    <ID>ReturnCount:GameRepositoryImpl.kt$GameRepositoryImpl$override suspend fun getGames(searchFilterState: SearchFilterState): Result&lt;List&lt;Game&gt;&gt;</ID>
+    <ID>ReturnCount:GameRepositoryImpl.kt$GameRepositoryImpl$override suspend fun searchGames(query: String): Result&lt;List&lt;Game&gt;&gt;</ID>
+    <ID>ReturnCount:GameRepositoryImpl.kt$GameRepositoryImpl$suspend fun getGamesPaginated( searchFilterState: SearchFilterState, page: Int = 0, pageSize: Int = 20 ): Result&lt;Pair&lt;List&lt;Game&gt;, Boolean&gt;&gt;</ID>
+    <ID>ReturnCount:GetCollectionsUseCase.kt$GetCollectionsUseCaseImpl$override suspend fun getCollectionById( collectionId: String, forceRefresh: Boolean ): Result&lt;CollectionWithCount&gt;</ID>
+    <ID>ReturnCount:GetCollectionsUseCase.kt$GetCollectionsUseCaseImpl$override suspend fun invoke(forceRefresh: Boolean): Result&lt;List&lt;CollectionWithCount&gt;&gt;</ID>
+    <ID>ReturnCount:GetGamesWithUserDataUseCase.kt$GetGamesWithUserDataUseCase$suspend operator fun invoke(gameIds: List&lt;Int&gt;): Result&lt;List&lt;GameWithUserData&gt;&gt;</ID>
+    <ID>ReturnCount:InputSanitizer.kt$InputSanitizer$fun hasTextVariety(text: String): Boolean</ID>
+    <ID>ReturnCount:ManageCollectionStatusUseCase.kt$ManageCollectionStatusUseCaseImpl$override suspend fun getStatusTransitionConfirmation( gameId: Int, fromCollectionId: String, toCollectionId: String ): Result&lt;StatusTransitionConfirmation&gt;</ID>
+    <ID>ReturnCount:ManageCollectionStatusUseCase.kt$ManageCollectionStatusUseCaseImpl$override suspend fun moveGameBetweenStatusCollections( gameId: Int, fromCollectionId: String, toCollectionId: String, skipConfirmation: Boolean ): Result&lt;Unit&gt;</ID>
+    <ID>ReturnCount:ManageCollectionStatusUseCase.kt$ManageCollectionStatusUseCaseImpl$override suspend fun moveToNextStatus( gameId: Int, currentCollectionId: String ): Result&lt;String&gt;</ID>
+    <ID>ReturnCount:RemoveGameFromCollectionUseCase.kt$RemoveGameFromCollectionUseCaseImpl$override suspend fun invoke( collectionId: String, gameId: Int ): Result&lt;Unit&gt;</ID>
+    <ID>ReturnCount:RemoveGameFromCollectionUseCase.kt$RemoveGameFromCollectionUseCaseImpl$override suspend fun removeFromAllCollections(gameId: Int): Result&lt;List&lt;String&gt;&gt;</ID>
+    <ID>ReturnCount:RemoveGameFromCollectionUseCase.kt$RemoveGameFromCollectionUseCaseImpl$override suspend fun removeFromMultipleCollections( collectionIds: List&lt;String&gt;, gameId: Int ): Result&lt;List&lt;String&gt;&gt;</ID>
+    <ID>ReturnCount:SetUserRatingUseCase.kt$SetUserRatingUseCase$suspend operator fun invoke(gameId: Int, rating: Int): Result&lt;Unit&gt;</ID>
+    <ID>ReturnCount:SetUserReviewUseCase.kt$SetUserReviewUseCase$suspend operator fun invoke(gameId: Int, reviewText: String): Result&lt;Unit&gt;</ID>
+    <ID>ReturnCount:UpdateCollectionUseCase.kt$UpdateCollectionUseCaseImpl$override suspend fun invoke( collectionId: String, newName: String?, newDescription: String?, allowDefaultUpdate: Boolean ): Result&lt;GameCollection&gt;</ID>
+    <ID>ReturnCount:UpdateCollectionUseCase.kt$UpdateCollectionUseCaseImpl$override suspend fun validateUpdate( collectionId: String, newName: String?, newDescription: String? ): Result&lt;UpdateValidationInfo&gt;</ID>
+    <ID>ReturnCount:UserRatingReviewRepositoryImpl.kt$UserRatingReviewRepositoryImpl$override suspend fun getGamesWithUserData(gameIds: List&lt;Int&gt;): Result&lt;List&lt;GameWithUserData&gt;&gt;</ID>
+    <ID>ReturnCount:UserRatingReviewRepositoryImpl.kt$UserRatingReviewRepositoryImpl$override suspend fun getUserRating(gameId: Int): Result&lt;UserRating?&gt;</ID>
+    <ID>ReturnCount:UserRatingReviewRepositoryImpl.kt$UserRatingReviewRepositoryImpl$override suspend fun setUserRating(gameId: Int, rating: Int): Result&lt;Unit&gt;</ID>
+    <ID>ReturnCount:UserRatingReviewRepositoryImpl.kt$UserRatingReviewRepositoryImpl$override suspend fun setUserReview(gameId: Int, reviewText: String): Result&lt;Unit&gt;</ID>
+    <ID>SwallowedException:CollectionDetailViewModel.kt$CollectionDetailViewModel$exception: Exception</ID>
+    <ID>SwallowedException:GameCollectionRepositoryImpl.kt$GameCollectionRepositoryImpl$e: Exception</ID>
+    <ID>SwallowedException:GameViewModel.kt$GameViewModel$exception: Exception</ID>
+    <ID>SwallowedException:QuickRating.kt$e: Exception</ID>
+    <ID>SwallowedException:UserRatingReviewRepositoryImpl.kt$UserRatingReviewRepositoryImpl$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:AddGameToCollectionUseCase.kt$AddGameToCollectionUseCaseImpl$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:CollectionDetailViewModel.kt$CollectionDetailViewModel$exception: Exception</ID>
+    <ID>TooGenericExceptionCaught:CollectionInitializationService.kt$CollectionInitializationServiceImpl$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:CollectionsViewModel.kt$CollectionsViewModel$exception: Exception</ID>
+    <ID>TooGenericExceptionCaught:CreateCollectionUseCase.kt$CreateCollectionUseCaseImpl$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:DeleteCollectionUseCase.kt$DeleteCollectionUseCaseImpl$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:DeleteUserRatingUseCase.kt$DeleteUserRatingUseCase$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:DeleteUserReviewUseCase.kt$DeleteUserReviewUseCase$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:GameCollectionRepositoryImpl.kt$GameCollectionRepositoryImpl$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:GameRepositoryImpl.kt$GameRepositoryImpl$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:GameRepositoryImpl.kt$GameRepositoryImpl$exception: Exception</ID>
+    <ID>TooGenericExceptionCaught:GameViewModel.kt$GameViewModel$exception: Exception</ID>
+    <ID>TooGenericExceptionCaught:GetCollectionsUseCase.kt$GetCollectionsUseCaseImpl$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:GetGameWithUserDataUseCase.kt$GetGameWithUserDataUseCase$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:GetGamesWithUserDataUseCase.kt$GetGamesWithUserDataUseCase$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:GetRecentUserActivityUseCase.kt$GetRecentUserActivityUseCase$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:GetUserRatingStatsUseCase.kt$GetUserRatingStatsUseCase$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:GetUserRatingUseCase.kt$GetUserRatingUseCase$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:GetUserReviewUseCase.kt$GetUserReviewUseCase$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:InitializeDefaultCollectionsUseCase.kt$InitializeDefaultCollectionsUseCaseImpl$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:ManageCollectionStatusUseCase.kt$ManageCollectionStatusUseCaseImpl$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:QuickRating.kt$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:RemoveGameFromCollectionUseCase.kt$RemoveGameFromCollectionUseCaseImpl$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:SetUserRatingUseCase.kt$SetUserRatingUseCase$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:SetUserReviewUseCase.kt$SetUserReviewUseCase$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:UpdateCollectionUseCase.kt$UpdateCollectionUseCaseImpl$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:UserRatingReviewRepositoryImpl.kt$UserRatingReviewRepositoryImpl$e: Exception</ID>
+    <ID>TooManyFunctions:CollectionDetailViewModel.kt$CollectionDetailViewModel : ViewModel</ID>
+    <ID>TooManyFunctions:CollectionsViewModel.kt$CollectionsViewModel : ViewModel</ID>
+    <ID>TooManyFunctions:GameCollectionRepository.kt$GameCollectionRepository</ID>
+    <ID>TooManyFunctions:UserRatingReviewRepository.kt$UserRatingReviewRepository</ID>
+    <ID>TooManyFunctions:UserRatingReviewValidator.kt$UserRatingReviewValidator</ID>
+    <ID>UnusedParameter:CollectionsScreen.kt$onNavigateBack: () -&gt; Unit = {}</ID>
+    <ID>UnusedParameter:StatisticsScreen.kt$onGameClick: (Int) -&gt; Unit</ID>
+    <ID>UnusedParameter:UserRatingReviewRepositoryImpl.kt$UserRatingReviewRepositoryImpl$gameId: Int</ID>
+    <ID>UnusedPrivateMember:CollectionInitializationService.kt$CollectionInitializationServiceImpl$private suspend fun performMigrationIfNeeded(): Result&lt;Boolean&gt;</ID>
+    <ID>UnusedPrivateProperty:ConstrainedScrollableContainer.kt$val currentConstraints = constraints</ID>
+    <ID>UnusedPrivateProperty:ExpandableFilterLayout.kt$val density = LocalDensity.current</ID>
+    <ID>UnusedPrivateProperty:GameDetailsViewModel.kt$GameDetailsViewModel$private val deleteUserRatingUseCase: DeleteUserRatingUseCase</ID>
+    <ID>UnusedPrivateProperty:UserRatingReviewRepositoryImpl.kt$UserRatingReviewRepositoryImpl$private val appDatabase: AppDatabase</ID>
+    <ID>UnusedPrivateProperty:UserRatingReviewRepositoryImpl.kt$UserRatingReviewRepositoryImpl$val validLimit = limit.coerceIn(1, 100) // Ensure reasonable limit</ID>
+    <ID>WildcardImport:SafePullToRefreshBoxDemo.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>WildcardImport:SafePullToRefreshBoxDemo.kt$import androidx.compose.material3.*</ID>
+    <ID>WildcardImport:SafePullToRefreshBoxDemo.kt$import androidx.compose.runtime.*</ID>
+    <ID>WildcardImport:SafePullToRefreshBoxExamples.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>WildcardImport:SafePullToRefreshBoxExamples.kt$import androidx.compose.material3.*</ID>
+    <ID>WildcardImport:SafePullToRefreshBoxExamples.kt$import androidx.compose.runtime.*</ID>
+  </CurrentIssues>
+</SmellBaseline>

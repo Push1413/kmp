@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues/>
+  <CurrentIssues>
+    <ID>ConstructorParameterNaming:DeveloperDTO.kt$DeveloperDTO$val games_count: Int</ID>
+    <ID>ConstructorParameterNaming:DeveloperDTO.kt$DeveloperDTO$val image_background: String</ID>
+    <ID>ConstructorParameterNaming:GameDetailsResponse.kt$GameDetailsResponse$val achievements_count: Int</ID>
+    <ID>ConstructorParameterNaming:GameDetailsResponse.kt$GameDetailsResponse$val added_by_status: AddedByStatusDTO</ID>
+    <ID>ConstructorParameterNaming:GameDetailsResponse.kt$GameDetailsResponse$val additions_count: Int</ID>
+    <ID>ConstructorParameterNaming:GameDetailsResponse.kt$GameDetailsResponse$val alternative_names: List&lt;String&gt;</ID>
+    <ID>ConstructorParameterNaming:GameDetailsResponse.kt$GameDetailsResponse$val background_image: String</ID>
+    <ID>ConstructorParameterNaming:GameDetailsResponse.kt$GameDetailsResponse$val background_image_additional: String?</ID>
+    <ID>ConstructorParameterNaming:GameDetailsResponse.kt$GameDetailsResponse$val creators_count: Int</ID>
+    <ID>ConstructorParameterNaming:GameDetailsResponse.kt$GameDetailsResponse$val description_raw: String</ID>
+    <ID>ConstructorParameterNaming:GameDetailsResponse.kt$GameDetailsResponse$val dominant_color: String</ID>
+    <ID>ConstructorParameterNaming:GameDetailsResponse.kt$GameDetailsResponse$val esrb_rating: EsrbRatingDTO</ID>
+    <ID>ConstructorParameterNaming:GameDetailsResponse.kt$GameDetailsResponse$val game_series_count: Int</ID>
+    <ID>ConstructorParameterNaming:GameDetailsResponse.kt$GameDetailsResponse$val movies_count: Int</ID>
+    <ID>ConstructorParameterNaming:GameDetailsResponse.kt$GameDetailsResponse$val name_original: String</ID>
+    <ID>ConstructorParameterNaming:GameDetailsResponse.kt$GameDetailsResponse$val parent_achievements_count: Int</ID>
+    <ID>ConstructorParameterNaming:GameDetailsResponse.kt$GameDetailsResponse$val parent_platforms: List&lt;ParentPlatformDTO&gt;</ID>
+    <ID>ConstructorParameterNaming:GameDetailsResponse.kt$GameDetailsResponse$val parents_count: Int</ID>
+    <ID>ConstructorParameterNaming:GameDetailsResponse.kt$GameDetailsResponse$val rating_top: Int</ID>
+    <ID>ConstructorParameterNaming:GameDetailsResponse.kt$GameDetailsResponse$val ratings_count: Int</ID>
+    <ID>ConstructorParameterNaming:GameDetailsResponse.kt$GameDetailsResponse$val reddit_count: Int</ID>
+    <ID>ConstructorParameterNaming:GameDetailsResponse.kt$GameDetailsResponse$val reddit_description: String</ID>
+    <ID>ConstructorParameterNaming:GameDetailsResponse.kt$GameDetailsResponse$val reddit_logo: String</ID>
+    <ID>ConstructorParameterNaming:GameDetailsResponse.kt$GameDetailsResponse$val reddit_name: String</ID>
+    <ID>ConstructorParameterNaming:GameDetailsResponse.kt$GameDetailsResponse$val reddit_url: String</ID>
+    <ID>ConstructorParameterNaming:GameDetailsResponse.kt$GameDetailsResponse$val reviews_count: Int</ID>
+    <ID>ConstructorParameterNaming:GameDetailsResponse.kt$GameDetailsResponse$val reviews_text_count: Int</ID>
+    <ID>ConstructorParameterNaming:GameDetailsResponse.kt$GameDetailsResponse$val saturated_color: String</ID>
+    <ID>ConstructorParameterNaming:GameDetailsResponse.kt$GameDetailsResponse$val screenshots_count: Int</ID>
+    <ID>ConstructorParameterNaming:GameDetailsResponse.kt$GameDetailsResponse$val suggestions_count: Int</ID>
+    <ID>ConstructorParameterNaming:GameDetailsResponse.kt$GameDetailsResponse$val twitch_count: Int</ID>
+    <ID>ConstructorParameterNaming:GameDetailsResponse.kt$GameDetailsResponse$val user_game: String?</ID>
+    <ID>ConstructorParameterNaming:GameDetailsResponse.kt$GameDetailsResponse$val youtube_count: Int</ID>
+    <ID>ConstructorParameterNaming:GenreDTO.kt$GenreDTO$val games_count: Int</ID>
+    <ID>ConstructorParameterNaming:GenreDTO.kt$GenreDTO$val image_background: String</ID>
+    <ID>ConstructorParameterNaming:PlatformXDTO.kt$PlatformXDTO$val released_at: String?</ID>
+    <ID>ConstructorParameterNaming:PlatformXXDTO.kt$PlatformXXDTO$val games_count: Int?=0</ID>
+    <ID>ConstructorParameterNaming:PlatformXXDTO.kt$PlatformXXDTO$val image_background: String</ID>
+    <ID>ConstructorParameterNaming:PublisherDTO.kt$PublisherDTO$val games_count: Int</ID>
+    <ID>ConstructorParameterNaming:PublisherDTO.kt$PublisherDTO$val image_background: String</ID>
+    <ID>ConstructorParameterNaming:StoreXDTO.kt$StoreXDTO$val games_count: Int</ID>
+    <ID>ConstructorParameterNaming:StoreXDTO.kt$StoreXDTO$val image_background: String</ID>
+    <ID>ConstructorParameterNaming:TagDTO.kt$TagDTO$val games_count: Int</ID>
+    <ID>ConstructorParameterNaming:TagDTO.kt$TagDTO$val image_background: String</ID>
+    <ID>NewLineAtEndOfFile:ApiService.kt$com.devpush.coreNetwork.apiService.ApiService.kt</ID>
+    <ID>NewLineAtEndOfFile:CoreNetworkModule.kt$com.devpush.coreNetwork.di.CoreNetworkModule.kt</ID>
+    <ID>NewLineAtEndOfFile:DeveloperDTO.kt$com.devpush.coreNetwork.model.gameDetails.DeveloperDTO.kt</ID>
+    <ID>NewLineAtEndOfFile:GameResponse.kt$com.devpush.coreNetwork.model.game.GameResponse.kt</ID>
+    <ID>NewLineAtEndOfFile:GenreDto.kt$com.devpush.coreNetwork.model.game.GenreDto.kt</ID>
+    <ID>NewLineAtEndOfFile:KtorClient.kt$com.devpush.coreNetwork.client.KtorClient.kt</ID>
+    <ID>NewLineAtEndOfFile:PlatformDto.kt$com.devpush.coreNetwork.model.game.PlatformDto.kt</ID>
+    <ID>NewLineAtEndOfFile:Result.kt$com.devpush.coreNetwork.model.game.Result.kt</ID>
+    <ID>NewLineAtEndOfFile:Secrets.android.kt$com.devpush.coreNetwork.api.Secrets.android.kt</ID>
+    <ID>NewLineAtEndOfFile:Secrets.ios.kt$com.devpush.coreNetwork.api.Secrets.ios.kt</ID>
+    <ID>TooGenericExceptionCaught:ApiService.kt$ApiService$e: Exception</ID>
+  </CurrentIssues>
+</SmellBaseline>
