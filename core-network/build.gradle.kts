@@ -1,3 +1,5 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidLibrary)
@@ -5,6 +7,19 @@ plugins {
     alias(libs.plugins.composeCompiler)
     alias(libs.plugins.kotlinx.serialization)
 }
+
+val localProperties = Properties().apply {
+    val localPropertiesFile = rootProject.file("local.properties")
+    if (localPropertiesFile.exists()) {
+        localPropertiesFile.inputStream().use { load(it) }
+    }
+}
+
+// Resolution order: local.properties (gitignored, per-developer) > -PAPI_KEY / CI secret > env var > empty.
+val rawgApiKey: String = localProperties.getProperty("API_KEY")
+    ?: providers.gradleProperty("API_KEY").orNull
+    ?: providers.environmentVariable("API_KEY").orNull
+    ?: ""
 
 kotlin {
     jvmToolchain(11)
@@ -62,7 +77,7 @@ android {
 
     defaultConfig {
         minSdk = libs.versions.android.minSdk.get().toInt()
-        buildConfigField("String", "API_KEY", "\"${providers.gradleProperty("API_KEY").get()}\"")
+        buildConfigField("String", "API_KEY", "\"$rawgApiKey\"")
 
     }
     packaging {
